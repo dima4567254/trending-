@@ -2,16 +2,18 @@ html,
 body {
     height: 100%;
 }
-/*
+
 body {
+    font-family: 'Poppins';
     font-size: 16px;
     line-height: 1;
-    color: $default;
-    @extend %dmsans-700px;
+    // color: $default;
+    // @extend %dmsans-700px;
     letter-spacing: 0.6px;
     display: flex;
     flex-direction: column;
-}*/
+    color: #ffffff;
+}
 
 .sr-only {
     position: absolute;
@@ -34,7 +36,10 @@ body {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1285px;
     margin: 0 auto;
     padding: 0 15px;
+    &__sm {
+
+    }
 }
