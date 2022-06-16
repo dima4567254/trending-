@@ -9,10 +9,11 @@ body {
     line-height: 1;
     // color: $default;
     // @extend %dmsans-700px;
-    letter-spacing: 0.6px;
+    // letter-spacing: 0.6px;
     display: flex;
     flex-direction: column;
     color: #ffffff;
+    font-weight: 400;
 }
 
 .sr-only {
