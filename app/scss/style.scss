@@ -5,18 +5,24 @@
 @import 'libs';
 
 .menu {
-    .menu__btn {
-        display: none
+    background-color: #f2b125;
+    padding: 17px 0;
+
+    .menu__items {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        outline-color: #000000;
+        outline-offset: 5px;
     }
-}
 
-.social {
-    display: flex;
-    z-index: 100;
-    gap: 25px;
+    .menu__item {
+        // line-height: 60px;
+        font-weight: 600;
+        margin-right: 35px;
+    }
 
-    &__svg symbol path {
-
+    .menu__link {
         transition: color 0.5s;
 
         &:focus {
@@ -24,31 +30,71 @@
         }
 
         &:hover {
-            fill: red;
+            color: $black;
         }
 
         &:active {
             color: $active;
         }
     }
-}
 
-.use {
-    fill: white;
-    transition: color 0.5s;
 
-    &:focus {
-        color: $green;
-    }
 
-    &:hover {
-        fill: red;
-    }
-
-    &:active {
-        color: $active;
+    .menu__btn {
+        // display: none;
+        background-color: transparent;
+        border: none;
     }
 }
+
+.dropdown__select {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+
+
+}
+
+.social {
+    display: flex;
+    z-index: 100;
+    gap: 25px;
+
+    // &__svg symbol path {
+
+    //     transition: color 0.5s;
+
+    //     &:focus {
+    //         color: $green;
+    //     }
+
+    //     &:hover {
+    //         fill: red;
+    //     }
+
+    //     &:active {
+    //         color: $active;
+    //     }
+    // }
+}
+
+// .use {
+//     fill: white;
+//     transition: color 0.5s;
+
+//     &:focus {
+//         color: $green;
+//     }
+
+//     &:hover {
+//         fill: red;
+//     }
+
+//     &:active {
+//         color: $active;
+//     }
+// }
 
 
 .trending-news {
@@ -74,7 +120,7 @@
     &__link {
         background-color: #f02f23;
         border-radius: 4px;
-        padding: 10px 15px;
+        padding: 7px 11px;
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;
@@ -123,13 +169,13 @@
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .swiper-button-prev {
     // left: 700px;
     // left: 0;
-    right: 30px;
+    right: 27px;
     left: auto;
 
 }
@@ -148,7 +194,7 @@
 }
 
 .swiper-wrapper {
-    width: 605px;
+    width: 620px;
 }
 
 .swiper__text {
@@ -157,7 +203,7 @@
 
 .currency {
     background-color: #1b1c27;
-    padding: 25px 0;
+    padding: 22px 0;
 
     &__wraper {
         display: flex;
@@ -181,15 +227,18 @@
 
     &__svg {
         margin-right: 10px;
+        z-index: 999;
+
     }
 
-    &__button {
+    // поменять если не сделаю кнопку 
+    &__icon {
         border-radius: 50%;
-        border: 1px solid  white;
+        border: 1px solid transparent;
         background-color: $white;
         margin-right: 10px;
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
         // padding: 10px;
         display: flex;
         justify-content: center;
@@ -201,7 +250,7 @@
         }
 
         &:hover {
-            border: 1px solid  blue;
+            border: 1px solid blue;
         }
 
         &:active {
@@ -243,7 +292,114 @@
 }
 
 
+.blog {
+    padding: 35px 0px 75px 0px;
+    background-color: #2f2f33;
 
+    &__images {
+        display: block;
+        position: relative;
+    }
+
+    &__img {
+        width: 590px;
+        height: 545px;
+        object-fit: cover;
+        // display: none;
+
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    &__item {
+        // !
+        max-width: 63vw;
+        gap: 15px;
+        border: 1px solid gold;
+
+    }
+
+    &__main {
+        position: absolute;
+        top: 265px;
+        left: 0px;
+        max-width: 33vw;
+        padding: 30px 30px 40px 30px;
+        // 590
+    }
+
+    &__inner {
+        display: flex;
+
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: flex-start;
+    }
+
+
+    &__currency {
+        background-color: #f2b125;
+        border-radius: 4px;
+        font-family: Poppins;
+        font-size: 14px;
+        // line-height: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #2f2f33;
+        padding: 5px 17px;
+    }
+
+    &__icon {
+        background-color: red;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    &__bottom {
+        // padding: 0 30px 0 75px ;
+        display: flex;
+        flex-direction: column;
+        /* align-items: end; */
+        justify-content: end;
+        height: 410px;
+
+    }
+
+    &__info {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        gap: 35px;
+    }
+
+    &__svg {
+        margin-right: 5px;
+    }
+
+    &__title {
+        font-size: 30px;
+        // line-height: 36px;
+        font-weight: 600;
+        color: #fefeff;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 15px;
+        // line-height: 25px;
+
+    }
+}
 
 
 
