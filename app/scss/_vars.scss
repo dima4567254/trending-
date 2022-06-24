@@ -2,12 +2,24 @@
 sans-serif;*/
 
 
-$orange: #FF9900;
+$orange: #f2b125;
 $active: #fb0909;
-$ac: #fcd7b6;
-$green:#14B4BE;
+$red: #f02f23;
+$ac: black;
+$green: #14B4BE;
+$green2: #3bed23;
 $white: #FFFFFF;
+$white2: #fefeff;
+
 $black: #000000;
+$black2: #202234;
+$black3: #1b1c27;
+$black4: #2f2f33;
+$gold: gold;
+
+$blue: blue;
+
+
 $title: #436372;
 
 
@@ -27,4 +39,32 @@ $orange: #ffa500;
 $active: #fb0909;
 $ac: #fcd7b6;
 $green:#14B4BE;
+*/
+
+@mixin clamp($line-clamp, ) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+@mixin clamp2($max-width, $inline-block) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: $inline-block;
+    max-width: $max-width;
+
+}
+
+@mixin line-height($font-size, $line-height, ) {
+
+    line-height: ($line-height / $font-size)
+}
+
+/*
+@include clamp(5);
+@include line-height(5);
+
 */
