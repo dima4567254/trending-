@@ -23,6 +23,8 @@ $(function name(params) {
         // },
       });
 
+      $('select').styler();
+
 
 
     /*	$(".menu a").on("click", function (event) {

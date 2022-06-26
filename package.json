@@ -14,6 +14,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "imagemin": "^7.0.1",
+    "jquery-form-styler": "^2.0.2",
     "node-sass": "^5.0.0"
   },
   "dependencies": {

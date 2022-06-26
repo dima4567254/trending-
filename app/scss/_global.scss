@@ -32,6 +32,17 @@ body {
     @extend %title;
 }*/
 
+.title {
+    font-size: 18px;
+    // line-height: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $black4;
+    border-bottom: 1px solid $gray1;
+    line-height: 60px;
+    width: 100%;
+}
+
 .main {
     flex-grow: 1;
 }
