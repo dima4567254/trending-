@@ -23,9 +23,24 @@ $(function name(params) {
         // },
       });
 
-      $('select').styler();
+    //   $('select').styler();
 
+    //   $('select').css('outline', '3px solid red');
 
+    //   onSelectOpened: function() {
+	// 	// к открытому селекту добавляется красная обводка
+	// 	$('select').css('outline', '3px solid red');
+	// }
+
+    $(' select').styler({
+        // fileBrowse: 'Выбрать',
+        // singleSelectzIndex: '999',
+        onSelectOpened: function() {
+            // к открытому селекту добавляется красная обводка
+            $(this).css('outline-color', ' #000000');
+        }
+    });
+    
 
     /*	$(".menu a").on("click", function (event) {
     	    event.preventDefault();
