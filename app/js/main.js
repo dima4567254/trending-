@@ -4,52 +4,57 @@ $(function name(params) {
         // Optional parameters
         // direction: 'vertical',
         loop: true,
-      
+
         // If we need pagination
         // pagination: {
         //     el: ".swiper-pagination",
         //     type: "fraction",
         //   },
-      
+
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-      
+
         // And if we need scrollbar
         // scrollbar: {
         //   el: '.swiper-scrollbar',
         // },
-      });
+    });
 
     //   $('select').styler();
 
     //   $('select').css('outline', '3px solid red');
 
     //   onSelectOpened: function() {
-	// 	// к открытому селекту добавляется красная обводка
-	// 	$('select').css('outline', '3px solid red');
-	// }
+    // 	// к открытому селекту добавляется красная обводка
+    // 	$('select').css('outline', '3px solid red');
+    // }
 
-    $(' select').styler({
+    $(' select,categories__input').styler({
         // fileBrowse: 'Выбрать',
         // singleSelectzIndex: '999',
-        onSelectOpened: function() {
+        onSelectOpened: function () {
             // к открытому селекту добавляется красная обводка
-            $(this).css('outline-color', ' #000000');
+            // $(this).css('outline', '1px solid red');
+            $(this).css('border-color', '1px solid red');
+            // $(this).css('outline-color', ' red');
+            // $(this).css('outline', ' red');
+            // $(this).css('background-color', ' red');
+            
         }
     });
-    
+
 
     /*	$(".menu a").on("click", function (event) {
-    	    event.preventDefault();
-    	    var id = $(this).attr('href'),
-    	        top = $(id).offset().top;
-    	    $('body,html').animate({
-    	        scrollTop: top
-    	    }, 1500);
-    	});
+            event.preventDefault();
+            var id = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({
+                scrollTop: top
+            }, 1500);
+        });
 
         /*для закрыть меню*/
     /*

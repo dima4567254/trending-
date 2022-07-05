@@ -46,6 +46,14 @@ body {
 
 }
 
+.checkbox-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
+
 .main {
     flex-grow: 1;
 }
@@ -57,3 +65,4 @@ body {
 
     &__sm {}
 }
+

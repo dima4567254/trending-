@@ -4,11 +4,13 @@
 @import 'global';
 @import 'libs';
 
+// провертить потом все отступы что бы были одинаковые у титулов
+
 .menu {
     background-color: $orange;
     padding: 17px 0;
 
-    .menu__items {
+    &__items {
         display: flex;
         justify-content: start;
         align-items: center;
@@ -16,13 +18,13 @@
         flex-wrap: wrap;
     }
 
-    .menu__item {
+    &__item {
         // line-height: 60px;
         font-weight: 600;
         margin-right: 35px;
     }
 
-    .menu__link {
+    &__link {
         transition: color 0.5s;
         outline-color: $black;
         outline-offset: 5px;
@@ -43,7 +45,7 @@
 
 
 
-    .menu__btn {
+    &__btn {
         // display: none;
         background-color: transparent;
         border: none;
@@ -475,6 +477,11 @@
         // line-height: 25px;
         @include clamp(1);
     }
+
+    &__gambling {
+        padding: 15px 45px 15px 90px;
+        background-image: url('../images/orange-bg.png');
+    }
 }
 
 .info {
@@ -522,17 +529,14 @@
 }
 
 .gambling {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 45px 15px 90px;
-        border: 1px solid orange;
-        background-image: url('../images/orange-bg.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
     }
 
     &__icon {
@@ -655,6 +659,11 @@
         padding-bottom: 30px;
     }
 
+    &__gambling {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
@@ -754,6 +763,10 @@
         justify-content: space-between;
     }
 
+    &__inputs {
+        margin-right: 15px;
+    }
+
     &__input {
         width: 150px;
         height: 40px;
@@ -763,7 +776,6 @@
         margin-bottom: 20px;
         outline-color: $black;
 
-
         &::placeholder {
             font-size: 13px;
             color: $gray2;
@@ -771,10 +783,11 @@
     }
 
     &__select {
-        width: 150px;
-        height: 40px;
-        border: 1px solid $gray1;
-        border-radius: 6px;
+        // width: 150px;
+        // height: 40px;
+        // // border: 1px solid $gray1;
+        // border: none;
+        // border-radius: 6px;
         margin-bottom: 20px;
         // 
     }
@@ -788,12 +801,24 @@
     }
 }
 
+.jq-selectbox {
+    background: none !important;
+
+
+    // outline-color: #000000 !important;
+    box-shadow: none;
+    border: none;
+}
+
 .jq-selectbox__select {
-    height: 38px;
+    height: 40px;
     background: none !important;
     border: 1px solid #ecede7;
     border-radius: 6px;
-    outline-color: #000000 !important;
+    // outline-color: #000000 !important;
+    box-shadow: none;
+    border: none;
+
 
 
 
@@ -858,11 +883,7 @@
 
 
 .ratings {
-
-    &__item {
-        // !!!
-        margin-bottom: 30px;
-    }
+    padding-bottom: 45px;
 
     &__title {
         margin-bottom: 20px;
@@ -883,11 +904,34 @@
         margin-bottom: 15px;
     }
 
+    &__link-img {
+        transition: opacity 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
         font-size: 15px;
-        margin-bottom: 10px;
+
     }
 
     &__subtitle {
@@ -928,14 +972,17 @@
         color: $gray;
         @include clamp(2);
         transition: color 0.5s;
+
         &:focus {
-        color: $green; 
-         }
-         &:hover {
-         color: $red;
-         }
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
         &:active {
-        color: $active;
+            color: $active;
         }
     }
 
@@ -945,6 +992,7 @@
         left: 10px;
         display: flex;
         align-items: center;
+        z-index: 100;
     }
 
     &__subtext {
@@ -970,27 +1018,65 @@
 
 
 .recent-posts {
+    padding-bottom: 45px;
+
     &__title {}
 
     &__svg {}
 
     &__items {}
 
+
+
     &__item {
+
         max-width: 300px;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
 
     }
 
     &__inner {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__link {
+        // flex: 0 0 33%;
+        // display: flex;
+        // margin-right: 15px;
+        cursor: pointer;
+    }
+
+    &__images {
+        margin-right: 15px;
+        flex: 0 0 33%;
     }
 
     &__img {
         width: 100px;
         height: 90px;
-        margin-right: 15px;
+        transition: opacity 0.5s;
+        object-fit: cover;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            color: $active;
+        }
+
 
     }
 
@@ -1008,7 +1094,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
-        max-width: 100px;
+        max-width: 120px;
         min-width: 70px;
         transition: background-color 0.5s;
 
@@ -1025,7 +1111,7 @@
         }
     }
 
-    &__number {
+    &__numbers {
         font-size: 13px;
         text-transform: uppercase;
         color: #63636a;
@@ -1034,7 +1120,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
-        width: 70px;
+        // width: 70px;
     }
 
     &__svg {
@@ -1060,6 +1146,238 @@
         &:active {
             color: $active;
         }
+    }
+}
+
+.gambling-content {
+    padding: 40px 20px;
+    background-image: url('../images/orange-square.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 40px;
+
+
+    &__gambling {}
+
+    &__link {}
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 57px;
+        height: 57px;
+        clip-path: polygon(63% 3%, 100% 28%, 100% 29%, 95% 91%, 28% 100%, 5% 42%, 5% 38%);
+        background-image: linear-gradient(45.0deg, #f24c25 0%, #ffd200 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__svg {}
+
+    &__title {
+        letter-spacing: -0.1px;
+        font-family: 'Noto Sans';
+        font-size: 18px;
+        line-height: 16px;
+        font-style: italic;
+        margin-bottom: 25px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__title p {
+        margin-bottom: 5px;
+        font-weight: 400;
+
+
+    }
+
+    &__sale {
+        padding: 10px 22px;
+        background-color: $black4;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        color: $white;
+        border-radius: 6px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 210px;
+        transition: background-color 0.5s;
+
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            background-color: red;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+}
+
+.gambling {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__icon {}
+
+    &__svg {
+        z-index: 999;
+    }
+
+
+
+
+    &__title {}
+
+    &__title p {
+        font-size: 36px;
+        // line-height: 32px;
+        font-style: italic;
+        color: $black4;
+        letter-spacing: -2.3px;
+        margin-bottom: 10px;
+    }
+
+    &__link {}
+
+    &__sale {
+
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+.categories {
+    &__input {
+        &:checked+.categories__checkbox {
+            background-color: transparent;
+            color: $blue;
+        }
+    }
+
+    &__checkbox {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $red;
+        padding: 13px 2px 13px 2px;
+        color: $blue;
+        // margin-bottom: 27px;
+
+
+        // max-width: 270px;
+
+        font-size: 14px;
+        // line-height: 34px;
+        transition: color 1.5s, translateX 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $orange;
+
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 20px;
+                left: 2px;
+                height: 1px;
+                width: 10px;
+                background-color: $orange;
+            }
+
+            .categories__text {
+                color: $orange;
+                transform: translateX(15px);
+            }
+        }
+
+        &:active {
+            color: $active;
+        }
+
+        &--active {
+            background-color: $red;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    &__svg {
+        margin-right: 5px;
+    }
+
+
+    &__items {}
+
+    &__item {}
+
+    &__text {
+        font-weight: 500;
+        color: $gray;
+
+        // &:hover {
+        //     // color: $orange;
+        //     transform: translateX(15px);
+
+
+        //     &::before {
+        //         content: "";
+        //         position: absolute;
+        //         top: 20px;
+        //         left: -11px;
+        //         height: 1px;
+        //         width: 10px;
+        //         background-color: $orange;
+        //     }
+        // }
+
+    }
+
+    &__numbers {
+        color: $gray;
     }
 }
 
