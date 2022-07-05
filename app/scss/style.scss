@@ -368,66 +368,12 @@
 
     }
 
-    &__top {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
 
 
 
 
-    &__currency {
-        background-color: $orange;
-        border-radius: 4px;
-        font-family: Poppins;
-        font-size: 14px;
-        // line-height: 36px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #2f2f33;
-        padding: 5px 17px;
-        transition: color 0.5s;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-        // display: inline-block;
-        // max-width: 200px;
-        @include clamp2(200, inline-block);
 
 
-        &:focus {
-            color: $green;
-        }
-
-        &:hover {
-            background-color: $green;
-        }
-
-        &:active {
-            color: $active;
-        }
-    }
-
-    &__icon {
-        background-color: $ac;
-        width: 50px;
-        height: 50px;
-        border: 2px solid $orange;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    &__svg {
-        // margin-right: 5px;
-        font-size: 24px;
-
-        // width: 25px;
-        // height: 25px;
-    }
 
     &__bottom {
         // padding: 0 30px 0 75px ;
@@ -482,6 +428,66 @@
         padding: 15px 45px 15px 90px;
         background-image: url('../images/orange-bg.png');
     }
+
+
+    &__svg {
+        // margin-right: 5px;
+        font-size: 24px;
+
+        // width: 25px;
+        // height: 25px;
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__currency {
+        background-color: $orange;
+        border-radius: 4px;
+        font-family: Poppins;
+        font-size: 14px;
+        // line-height: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #2f2f33;
+        padding: 5px 17px;
+        transition: color 0.5s;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // display: inline-block;
+        // max-width: 200px;
+        @include clamp2(200, inline-block);
+
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            background-color: $green;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__icon {
+        background-color: $ac;
+        width: 50px;
+        height: 50px;
+        border: 2px solid $orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 .info {
@@ -608,7 +614,6 @@
 
 
 .content {
-
     padding: 75px 0px 0px 0px;
 
     &__wrapper {
@@ -616,8 +621,13 @@
         justify-content: space-between;
     }
 
-    &__right {
 
+
+    &__left {
+        max-width: 890px;
+    }
+
+    &__right {
         max-width: 310px;
     }
 
@@ -664,6 +674,28 @@
         flex-direction: column;
     }
 
+}
+
+.latest-videos {
+    &__title {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__big {
+        max-width: 620px;
+        background-color: red;
+    }
+
+    &__small {
+        width: 260px;
+        margin-right: 10px;
+    }
 }
 
 
@@ -1250,7 +1282,7 @@
 
 
 
-    &__title {}
+
 
     &__title p {
         font-size: 36px;
@@ -1282,104 +1314,153 @@
 }
 
 .categories {
-    &__input {
-        &:checked+.categories__checkbox {
-            background-color: transparent;
-            color: $blue;
-        }
-    }
-
-    &__checkbox {
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $red;
-        padding: 13px 2px 13px 2px;
-        color: $blue;
-        // margin-bottom: 27px;
-
-
-        // max-width: 270px;
-
-        font-size: 14px;
-        // line-height: 34px;
-        transition: color 1.5s, translateX 0.5s;
-
-        &:focus {
-            color: $green;
-        }
-
-        &:hover {
-            color: $orange;
-
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: 20px;
-                left: 2px;
-                height: 1px;
-                width: 10px;
-                background-color: $orange;
-            }
-
-            .categories__text {
-                color: $orange;
-                transform: translateX(15px);
-            }
-        }
-
-        &:active {
-            color: $active;
-        }
-
-        &--active {
-            background-color: $red;
-        }
-    }
 
     &__title {
         margin-bottom: 20px;
         padding-bottom: 10px;
     }
 
-    &__svg {
-        margin-right: 5px;
-    }
-
-
     &__items {}
 
     &__item {}
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 2px 13px 2px;
+        // margin-bottom: 25px;
+    }
 
     &__text {
         font-weight: 500;
         color: $gray;
 
-        // &:hover {
-        //     // color: $orange;
-        //     transform: translateX(15px);
 
+    }
 
-        //     &::before {
-        //         content: "";
-        //         position: absolute;
-        //         top: 20px;
-        //         left: -11px;
-        //         height: 1px;
-        //         width: 10px;
-        //         background-color: $orange;
-        //     }
-        // }
+    &__link {
+        &:hover {
+            .categories__text {
+                transform: translateX(15px);
+                color: $orange;
 
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 8px;
+                    left: -13px;
+                    height: 1px;
+                    width: 10px;
+                    background-color: $orange;
+                }
+            }
+        }
     }
 
     &__numbers {
         color: $gray;
     }
 }
+
+// .categories {
+//     &__input {
+//         &:checked+.categories__checkbox {
+//             background-color: transparent;
+//             color: $blue;
+//         }
+//     }
+
+//     &__checkbox {
+//         cursor: pointer;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         background-color: $red;
+//         padding: 13px 2px 13px 2px;
+//         color: $blue;
+//         // margin-bottom: 27px;
+
+
+//         // max-width: 270px;
+
+//         font-size: 14px;
+//         // line-height: 34px;
+//         transition: color 1.5s, translateX 0.5s;
+
+//         &:focus {
+//             color: $green;
+//         }
+
+//         &:hover {
+//             color: $orange;
+
+//             position: relative;
+
+//             &::before {
+//                 content: "";
+//                 position: absolute;
+//                 top: 20px;
+//                 left: 2px;
+//                 height: 1px;
+//                 width: 10px;
+//                 background-color: $orange;
+//             }
+
+//             .categories__text {
+//                 color: $orange;
+//                 transform: translateX(15px);
+//             }
+//         }
+
+//         &:active {
+//             color: $active;
+//         }
+
+//         &--active {
+//             background-color: $red;
+//         }
+//     }
+
+//     &__title {
+//         margin-bottom: 20px;
+//         padding-bottom: 10px;
+//     }
+
+//     &__svg {
+//         margin-right: 5px;
+//     }
+
+
+//     &__items {}
+
+//     &__item {}
+
+//     &__text {
+//         font-weight: 500;
+//         color: $gray;
+
+//         // &:hover {
+//         //     // color: $orange;
+//         //     transform: translateX(15px);
+
+
+//         //     &::before {
+//         //         content: "";
+//         //         position: absolute;
+//         //         top: 20px;
+//         //         left: -11px;
+//         //         height: 1px;
+//         //         width: 10px;
+//         //         background-color: $orange;
+//         //     }
+//         // }
+
+//     }
+
+//     &__numbers {
+//         color: $gray;
+//     }
+// }
 
 // .recent-posts__img {
 //     width: 100px;
