@@ -439,7 +439,8 @@
     }
 }
 
-.categories {
+// тот который был categories
+.box {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -559,9 +560,6 @@
         z-index: 999;
     }
 
-
-
-
     &__title {
         font-size: 36px;
         // line-height: 32px;
@@ -677,6 +675,8 @@
 }
 
 .latest-videos {
+    padding-bottom: 70px;
+
     &__title {
         padding-bottom: 10px;
         margin-bottom: 20px;
@@ -688,16 +688,153 @@
     }
 
     &__big {
-        max-width: 620px;
-        background-color: red;
+        margin-right: 10px;
+
     }
 
-    &__small {
+    &__images {
+        position: relative;
+    }
+
+    &__img {
+        width: 620px;
+        height: 440px;
+        object-fit: cover;
+    }
+
+    &__box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 35px;
+        max-width: 620px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 100%;
+
+    }
+
+    &__info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 35px;
+    }
+
+
+}
+
+.videos-small {
+    width: 260px;
+
+
+    &__item {
+        position: relative;
+
+    }
+
+    &__img {
         width: 260px;
-        margin-right: 10px;
+        height: 140px;
+    }
+
+    &__box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: 15px;
+        // line-height: 21px;
+        font-weight: 600;
     }
 }
 
+.trending-filter {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__items {}
+
+    &__item {}
+
+    &__img {
+        width: 280px;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    &__box {}
+
+    &__title {}
+
+    &__author {}
+}
+
+.filter {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        // line-height: 60px;
+        font-weight: 500;
+        color: $black4;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+
+        &--active {
+            color: $orange;
+        }
+    }
+}
+
+
+.title {}
+
+.currency__svg {}
+
+
+
+
+
+.blog__top {}
+
+.categories {}
+
+.categories__currency {}
+
+.author {}
+
+.author__author {}
+
+.author__views {}
+
+.author__svg {}
+
+.author__title {}
 
 .subscribe {
     margin-bottom: 40px;
