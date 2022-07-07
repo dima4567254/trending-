@@ -17,24 +17,11 @@ $(function name(params) {
             prevEl: '.swiper-button-prev',
         },
 
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
     });
 
-    //   $('select').styler();
-
-    //   $('select').css('outline', '3px solid red');
-
-    //   onSelectOpened: function() {
-    // 	// к открытому селекту добавляется красная обводка
-    // 	$('select').css('outline', '3px solid red');
-    // }
-
+    
     $(' select,categories__input').styler({
-        // fileBrowse: 'Выбрать',
-        // singleSelectzIndex: '999',
+
         onSelectOpened: function () {
             // к открытому селекту добавляется красная обводка
             // $(this).css('outline', '1px solid red');
@@ -45,6 +32,18 @@ $(function name(params) {
             
         }
     });
+
+    var mixer = mixitup('.trending-filter__items'); 
+
+    //   $('select').styler();
+
+    //   $('select').css('outline', '3px solid red');
+
+    //   onSelectOpened: function() {
+    // 	// к открытому селекту добавляется красная обводка
+    // 	$('select').css('outline', '3px solid red');
+    // }
+
 
 
     /*	$(".menu a").on("click", function (event) {

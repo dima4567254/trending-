@@ -755,26 +755,131 @@
 }
 
 .trending-filter {
+    padding-bottom: 70px;
+
     &__inner {
         display: flex;
         justify-content: space-between;
+        color: $black4;
+        border-bottom: 1px solid $gray1;
+        width: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
     }
 
-    &__items {}
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 35px 25px;
 
-    &__item {}
+    }
+
+    &__item {
+        width: 280px;
+    }
 
     &__img {
         width: 280px;
         height: 180px;
         object-fit: cover;
+        // padding: 12px;
+
+    }
+
+    &__images {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    &__link {}
+
+    &__rectangle {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        font-size: 14px;
+        // line-height: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $black4;
+        letter-spacing: 0;
+        padding: 5px 8px 4px 9px;
+        background-color: $orange;
+        transition: background-color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            background-color: $blue;
+        }
+
+        &:active {
+            color: $active;
+        }
     }
 
     &__box {}
 
-    &__title {}
+    &__title {
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 600;
+        color: $black4;
+        letter-spacing: 0.2px;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
 
     &__author {}
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__author {
+        font-size: 13px;
+        // line-height: 21px;
+        text-transform: uppercase;
+        color: $gray3;
+        margin-right: 10px;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__views {
+        font-size: 13px;
+        // line-height: 36px;
+        text-transform: uppercase;
+        color: $gray;
+    }
 }
 
 .filter {
@@ -786,11 +891,13 @@
         }
     }
 
-    &__link {
+    &__button {
         font-size: 14px;
         // line-height: 60px;
         font-weight: 500;
         color: $black4;
+        border: none;
+        background-color: transparent;
         transition: color 0.5s;
 
         &:focus {
@@ -805,13 +912,15 @@
             color: $active;
         }
 
-        &--active {
-            color: $orange;
-        }
+        // &--active {
+        //  
+        // }
     }
 }
 
-
+.mixitup-control-active {
+       color: $orange;
+}
 .title {}
 
 .currency__svg {}
