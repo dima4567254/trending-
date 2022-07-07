@@ -368,13 +368,6 @@
 
     }
 
-
-
-
-
-
-
-
     &__bottom {
         // padding: 0 30px 0 75px ;
         // display: flex;
@@ -440,101 +433,6 @@
 }
 
 // тот который был categories
-.box {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    &__currency {
-        background-color: $orange;
-        border-radius: 4px;
-        font-family: Poppins;
-        font-size: 14px;
-        // line-height: 36px;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #2f2f33;
-        padding: 5px 17px;
-        transition: color 0.5s;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-        // display: inline-block;
-        // max-width: 200px;
-        @include clamp2(200, inline-block);
-
-
-        &:focus {
-            color: $green;
-        }
-
-        &:hover {
-            background-color: $green;
-        }
-
-        &:active {
-            color: $active;
-        }
-    }
-
-    &__icon {
-        background-color: $ac;
-        width: 50px;
-        height: 50px;
-        border: 2px solid $orange;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-}
-
-.info {
-    &__avtar {
-        transition: color 0.5s;
-        max-width: 175px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: inline-block;
-        font-size: 13px;
-        letter-spacing: 1.3px;
-
-        &:focus {
-            color: $green;
-        }
-
-        &:hover {
-            color: $ac;
-        }
-
-        &:active {
-            color: $active;
-        }
-    }
-
-    &__calendar {
-        font-size: 13px;
-    }
-
-    &__time {
-        text-transform: uppercase;
-    }
-
-    &__message {
-        font-size: 13px;
-    }
-
-    &__svg {
-        margin-right: 5px;
-        width: 20px;
-        height: 20px;
-        background-color: transparent;
-    }
-}
-
 .gambling {
     background-repeat: no-repeat;
     background-position: center;
@@ -689,17 +587,48 @@
 
     &__big {
         margin-right: 10px;
-
+        overflow: hidden;
+        cursor: pointer;
     }
 
     &__images {
         position: relative;
+        transition: transform 1s, ;
+
+        &:focus {
+            color: green;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            color: active;
+        }
+    }
+
+    &__link {
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
     }
 
     &__img {
         width: 620px;
         height: 440px;
         object-fit: cover;
+
     }
 
     &__box {
@@ -727,33 +656,76 @@
 }
 
 .videos-small {
-    width: 260px;
-
+    // width: 260px;
 
     &__item {
         position: relative;
-
+        margin-bottom: 7px;
+        overflow: hidden;
+        cursor: pointer;
     }
+
+    &__article {
+        transition: transform 1s, ;
+
+        &:focus {
+            color: green;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            color: active;
+        }
+    }
+
+    &__images {}
+
+    &__link {}
 
     &__img {
         width: 260px;
         height: 140px;
+
     }
 
     &__box {
         position: absolute;
         top: 0;
-        left: 0;
-        padding: 10px;
+        right: 0;
+        padding: 10px 10px 20px 10px;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        margin-left: auto;
     }
+
+    &__icon {}
 
     &__title {
         font-size: 15px;
         // line-height: 21px;
         font-weight: 600;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+
     }
 }
 
+// !!!промисать кламп
 .trending-filter {
     padding-bottom: 70px;
 
@@ -784,12 +756,26 @@
         height: 180px;
         object-fit: cover;
         // padding: 12px;
+        transition: transform 1s, ;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        &:active {
+            color: $active;
+        }
 
     }
 
     &__images {
         position: relative;
         margin-bottom: 15px;
+
     }
 
     &__link {}
@@ -847,40 +833,7 @@
     &__author {}
 }
 
-.author {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
 
-    &__author {
-        font-size: 13px;
-        // line-height: 21px;
-        text-transform: uppercase;
-        color: $gray3;
-        margin-right: 10px;
-        transition: color 0.5s;
-
-        &:focus {
-            color: $green;
-        }
-
-        &:hover {
-            color: $red;
-        }
-
-        &:active {
-            color: $active;
-        }
-    }
-
-    &__views {
-        font-size: 13px;
-        // line-height: 36px;
-        text-transform: uppercase;
-        color: $gray;
-    }
-}
 
 .filter {
     display: flex;
@@ -919,8 +872,9 @@
 }
 
 .mixitup-control-active {
-       color: $orange;
+    color: $orange;
 }
+
 .title {}
 
 .currency__svg {}
@@ -1022,7 +976,6 @@
 }
 
 .conversion {
-
     &__title {
         margin-bottom: 20px;
         padding-bottom: 10px;
@@ -1081,8 +1034,6 @@
 
 .jq-selectbox {
     background: none !important;
-
-
     // outline-color: #000000 !important;
     box-shadow: none;
     border: none;
@@ -1096,13 +1047,7 @@
     // outline-color: #000000 !important;
     box-shadow: none;
     border: none;
-
-
-
-
 }
-
-
 
 .jq-selectbox__trigger {
     border-left: none;

@@ -66,3 +66,158 @@ body {
     &__sm {}
 }
 
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__currency {
+        background-color: $orange;
+        border-radius: 4px;
+        font-family: Poppins;
+        font-size: 14px;
+        // line-height: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $black4;
+        padding: 5px 17px;
+        transition: color 0.5s;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // display: inline-block;
+        // max-width: 200px;
+        @include clamp2(200, inline-block);
+
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            background-color: $green;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__icon {
+        background-color: $ac;
+        width: 50px;
+        height: 50px;
+        border: 2px solid $orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: background-color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          .box__svg use {
+            fill: black;
+          }
+         
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.info {
+    &__avtar {
+        transition: color 0.5s;
+        max-width: 175px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        font-size: 13px;
+        letter-spacing: 1.3px;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__calendar {
+        font-size: 13px;
+    }
+
+    &__time {
+        text-transform: uppercase;
+    }
+
+    &__message {
+        font-size: 13px;
+    }
+
+    &__svg use {
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        fill: red;
+    }
+}
+
+.author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__author {
+        font-size: 13px;
+        // line-height: 21px;
+        text-transform: uppercase;
+        color: $gray3;
+        margin-right: 10px;
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__views {
+        font-size: 13px;
+        // line-height: 36px;
+        text-transform: uppercase;
+        color: $gray;
+    }
+}
+
+.box__icon:hover .box__svg use {
+    fill: red;
+}
