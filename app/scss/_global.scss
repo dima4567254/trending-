@@ -66,6 +66,51 @@ body {
     &__sm {}
 }
 
+.social {
+    display: flex;
+    z-index: 100;
+
+    &__link {
+        padding: 11px 13px;
+        border-radius: 6px;
+
+
+        &--facebook {
+            background-color: #5677b9;
+        }
+
+        &--twitter {
+            background-color: #39a6d4;
+        }
+
+        &--youtube {
+            background-color: #cd312a;
+
+        }
+
+        &--phone {
+            background-color: #235f85;
+        }
+    }
+
+    // &__svg symbol path {
+
+    //     transition: color 0.5s;
+
+    //     &:focus {
+    //         color: $green;
+    //     }
+
+    //     &:hover {
+    //         fill: red;
+    //     }
+
+    //     &:active {
+    //         color: $active;
+    //     }
+    // }
+}
+
 .box {
     display: flex;
     justify-content: space-between;
@@ -76,11 +121,12 @@ body {
         border-radius: 4px;
         font-family: Poppins;
         font-size: 14px;
-        // line-height: 36px;
+        line-height: 1.5;
+        // letter-spacing: 0.3px;
         font-weight: 600;
         text-transform: uppercase;
         color: $black4;
-        padding: 5px 17px;
+        padding: 0 17px;
         transition: color 0.5s;
         // white-space: nowrap;
         // overflow: hidden;
@@ -120,11 +166,12 @@ body {
         }
 
         &:hover {
-          background-color: #ffffff;
-          .box__svg use {
-            fill: black;
-          }
-         
+            background-color: #ffffff;
+
+            .box__svg use {
+                fill: $black;
+            }
+
         }
 
         &:active {
@@ -179,7 +226,6 @@ body {
         width: 20px;
         height: 20px;
         background-color: transparent;
-        fill: red;
     }
 }
 
@@ -219,5 +265,5 @@ body {
 }
 
 .box__icon:hover .box__svg use {
-    fill: red;
+    fill: black;
 }

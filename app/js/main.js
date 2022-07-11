@@ -1,6 +1,6 @@
 $(function name(params) {
 
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper1', {
         // Optional parameters
         // direction: 'vertical',
         loop: true,
@@ -12,6 +12,22 @@ $(function name(params) {
         //   },
 
         // Navigation arrows
+        // navigation: {
+        //     nextEl: '.custom-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+        navigation: {
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
+        },
+
+    });
+
+    var mySwiper = new Swiper(".swiper2", {
+        // loop: true,
+        slidesPerView: 2,
+        initialSlide: 0,
+        spaceBetween: 50,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -19,7 +35,7 @@ $(function name(params) {
 
     });
 
-    
+
     $(' select,categories__input').styler({
 
         onSelectOpened: function () {
@@ -29,11 +45,11 @@ $(function name(params) {
             // $(this).css('outline-color', ' red');
             // $(this).css('outline', ' red');
             // $(this).css('background-color', ' red');
-            
+
         }
     });
 
-    var mixer = mixitup('.trending-filter__items'); 
+    var mixer = mixitup('.trending-filter__items');
 
     //   $('select').styler();
 

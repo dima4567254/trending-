@@ -37,9 +37,10 @@
                                 Numberss
                             </p>
                         </div> -->
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <li class="swiper-slide">
+                        <!-- !!!сделать все бем блоками -->
+                        <div class="swiper1 ">
+                            <div class="trending-news-swiper__wrapper swiper-wrapper">
+                                <div class="swiper-slide">
                                     <div class="swiper__text">
                                         <p>
                                             VC Investments In Blockchain Companies On Track To Exceed
@@ -48,25 +49,25 @@
                                         </p>
                                     </div>
 
-                                </li>
-                                <li class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <div class="swiper-text">
                                         <p>2</p>
                                     </div>
-                                </li>
-                                <li class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <div class="swiper-text">
                                         <p>3</p>
                                     </div>
-                                </li>
-                                <li class="swiper-slide">
+                                </div>
+                                <div class="swiper-slide">
                                     <div class="swiper-text">
                                         <p>4</p>
                                     </div>
-                                </li>
+                                </div>
                             </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="custom-next"></div>
+                            <div class="custom-prev"></div>
 
 
                             <!-- <div class="swiper-pagination"></div> -->
@@ -379,8 +380,6 @@
                                 <a class="categories__currency" href="#">
                                     blockchain
                                 </a>
-                                <div class="categories__icon">
-                                </div>
                             </div>
                             <div class="blog__bottom">
                                 <div class="blog__info info">
@@ -519,8 +518,8 @@
                                                     bitcoin
                                                 </a>
                                                 <a class="box__icon icon" href="#">
-                                                    <svg class="box__svg" width="20px" height="20px">
-                                                        <use fill="white" xlink:href="images/sprite.svg#calendar"></use>
+                                                    <svg class="box__svg" fill="white" width="20px" height="20px">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
                                                 </a>
                                             </div>
@@ -530,7 +529,7 @@
                                                         - By Jordan Greentea
                                                     </a>
                                                     <div class="info__calendar">
-                                                        <svg class="currency__svg" width="15px" height="15px">
+                                                        <svg class="info__svg" width="15px" height="15px" fill="white">
                                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                                         </svg>
 
@@ -545,7 +544,6 @@
                                                         </svg>
                                                         14
                                                     </a>
-
                                                 </div>
                                                 <a class="latest-videos__link" href="#">
                                                     <h2 class="latest-videos__subtitle">
@@ -637,7 +635,7 @@
 
                         <!-- !!!название -->
                         <div class="trending-filter">
-                            <div class="trending-filter__inner">
+                            <div class="trending-filter__wrapper">
                                 <h2 class="trending-filter__title">
                                     <!-- !!! -->
                                     <!-- !!!все свг назвать под титул бем блок   -->
@@ -864,12 +862,216 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="picks">
+                            <h2 class="picks__title title">
+                                <svg class="picks__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                                    <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
+                                </svg>
+                                editor’s picks
+                            </h2>
+
+                            <div class="swiper2 mySwiper">
+                                <ul class="swiper-wrapper picks-swiper__wrapper picks__items">
+                                    <li class="picks__item swiper-slide">
+                                        <div class="picks__wrapper">
+                                            <!-- !!! не совсем правиьное название -->
+                                            <div class="picks__images" href="#">
+                                                <img class="picks__img" src="images/caption.jpg" alt="">
+                                            </div>
+                                            <div class="picks__box">
+                                                <div class="picks__inner">
+                                                    <a class="picks__info" href="#">
+                                                        scams
+                                                    </a>
+                                                    <div class="picks__numbers">
+                                                        <svg class="picks__svg" width="15px" height="10px"
+                                                            viewBox="0 0 15 10">
+                                                            <use fill="white"
+                                                                xlink:href="images/sprite.svg#two-circles">
+                                                            </use>
+                                                        </svg>
+                                                        46,987
+                                                    </div>
+                                                </div>
+                                                <a class="picks__link" href="#">
+                                                    <h3 class="picks__subtitle">
+                                                        Germany Won’t Tax
+                                                        Cryptocurrencies Used To Make Purchases
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="picks__item swiper-slide">
+                                        <div class="picks__wrapper">
+                                            <!-- !!! не совсем правиьное название -->
+                                            <a class="picks__images" href="#">
+                                                <img class="picks__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="picks__box">
+                                                <div class="picks__inner">
+                                                    <a class="picks__info" href="#">
+                                                        scams
+                                                    </a>
+                                                    <div class="picks__numbers">
+                                                        <svg class="picks__svg" width="15px" height="10px"
+                                                            viewBox="0 0 15 10">
+                                                            <use fill="white"
+                                                                xlink:href="images/sprite.svg#two-circles">
+                                                            </use>
+                                                        </svg>
+                                                        46,987
+                                                    </div>
+                                                </div>
+                                                <a class="picks__link" href="#">
+                                                    <h3 class="picks__subtitle">
+                                                        Gold Trading Giant Goldmoney
+                                                        Enables Cold Storage For Two More Cryptocurrencies
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="picks__item swiper-slide">
+                                        <div class="picks__wrapper">
+                                            <!-- !!! не совсем правиьное название -->
+                                            <a class="picks__images" href="#">
+                                                <img class="picks__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="picks__box">
+                                                <div class="picks__inner">
+                                                    <a class="picks__info" href="#">
+                                                        scams
+                                                    </a>
+                                                    <div class="picks__numbers">
+                                                        <svg class="picks__svg" width="15px" height="10px"
+                                                            viewBox="0 0 15 10">
+                                                            <use fill="white"
+                                                                xlink:href="images/sprite.svg#two-circles">
+                                                            </use>
+                                                        </svg>
+                                                        46,987
+                                                    </div>
+                                                </div>
+                                                <a class="picks__link" href="#">
+                                                    <h3 class="picks__subtitle">
+                                                        Porsche ‘First’ To Test Blockchain Technology
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="picks__item swiper-slide">
+                                        <div class="picks__wrapper">
+                                            <!-- !!! не совсем правиьное название -->
+                                            <a class="picks__images" href="#">
+                                                <img class="picks__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="picks__box">
+                                                <div class="picks__inner">
+                                                    <a class="picks__info" href="#">
+                                                        scams
+                                                    </a>
+                                                    <div class="picks__numbers">
+                                                        <svg class="picks__svg" width="15px" height="10px"
+                                                            viewBox="0 0 15 10">
+                                                            <use fill="white"
+                                                                xlink:href="images/sprite.svg#two-circles">
+                                                            </use>
+                                                        </svg>
+                                                        46,987
+                                                    </div>
+                                                </div>
+                                                <a class="picks__link" href="#">
+                                                    <h3 class="picks__subtitle">
+                                                        Porsche ‘First’ To Test Blockchain Technology
+                                                    </h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+
+                        <div class="latest-news">
+                            <h2 class="latest-news__title title">
+                                <svg class="latest-news__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                                    <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
+                                </svg>
+                                latest-news
+                            </h2>
+
+                            <ul class="latest-news__items">
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <a class="latest-news__images" href="#">
+                                            <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            <div class="videos-small__box box">
+                                                <a class="box__icon icon" href="#">
+                                                    <svg class="box__svg" width="20px" height="20px">
+                                                        <use fill="white" xlink:href="images/sprite.svg#calendar">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                                <a class="videos-small__link" href="#">
+                                                    <h2 class="videos-small__title">
+                                                        Coinbase Informs 13K
+                                                        Affected Customers Of To IRS
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                        </a>
+                                        <div class="latest-news__box">
+                                            <div class="latest-videos__info info">
+                                                <a class="info__avtar" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+
+                                                    <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    Goldman Sachs Keeps Criticizing
+                                                    Bitcoin, But There Are Certain Ties
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Japan’s financial services conglomerate SBI Group announced in a
+                                                    post on its
+                                                    site Tuesday, Feb. 27 that it has to postpone the launch of its
+                                                    planned
+                                                    cryptocurrency exchange...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <aside class="content__right">
                         <div class="content__subscribe  subscribe">
                             <h2 class="subscribe__title">
-
                                 Subscribe bitcoin news
                             </h2>
                             <div class="subscribe__text">
@@ -888,38 +1090,30 @@
                                 </button>
                             </form>
                             <ul class="content__social social">
-                                <li class="social__item content__item--facebook">
-                                    <a class="social__link" href="#">
+                                <li class="social__item">
+                                    <a class="social__link social__link--facebook" href="#">
                                         <svg class="social__svg" width="15px" height="15px">
                                             <!-- !!!разширить сылку -->
                                             <use class="social__use" xlink:href="images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social__item content__item--twitter">
-                                    <a class="social__link" href="#">
+                                <li class="social__item">
+                                    <a class="social__link social__link--twitter" href="#">
                                         <svg width="15px" height="15px">
                                             <use xlink:href="images/sprite.svg#twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="social__item content__item--youtube">
-                                    <a class="social__link" href="#">
-
-                                        <?xml version="1.0" encoding="UTF-8"?>
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"
-                                            viewBox="0 0 15 15" version="1.1">
-                                            <g id="surface1">
-                                                <path fill="white"
-                                                    d="M 2.90625 0 L 3.808594 0 L 4.425781 2.3125 L 4.996094 0 L 5.90625 0 L 4.867188 3.441406 L 4.867188 5.789062 L 3.972656 5.789062 L 3.972656 3.441406 Z M 7.027344 1.484375 C 6.328125 1.484375 5.867188 1.945312 5.867188 2.628906 L 5.867188 4.722656 C 5.867188 5.476562 6.257812 5.867188 7.027344 5.867188 C 7.667969 5.867188 8.171875 5.441406 8.171875 4.722656 L 8.171875 2.628906 C 8.171875 1.960938 7.671875 1.484375 7.027344 1.484375 Z M 7.359375 4.6875 C 7.359375 4.921875 7.242188 5.089844 7.027344 5.089844 C 6.808594 5.089844 6.683594 4.910156 6.683594 4.6875 L 6.683594 2.699219 C 6.683594 2.46875 6.789062 2.292969 7.011719 2.292969 C 7.257812 2.292969 7.359375 2.460938 7.359375 2.699219 Z M 10.316406 1.519531 L 10.316406 4.761719 C 10.21875 4.882812 10.003906 5.078125 9.847656 5.078125 C 9.679688 5.078125 9.636719 4.964844 9.636719 4.792969 L 9.636719 1.519531 L 8.84375 1.519531 L 8.84375 5.085938 C 8.84375 5.507812 8.972656 5.851562 9.398438 5.851562 C 9.640625 5.851562 9.972656 5.726562 10.316406 5.316406 L 10.316406 5.789062 L 11.109375 5.789062 L 11.109375 1.519531 Z M 11.691406 10.179688 C 11.414062 10.179688 11.355469 10.375 11.355469 10.65625 L 11.355469 11.070312 L 12.023438 11.070312 L 12.023438 10.65625 C 12.023438 10.382812 11.964844 10.179688 11.691406 10.179688 Z M 8.753906 10.203125 C 8.703125 10.230469 8.648438 10.273438 8.597656 10.328125 L 8.597656 12.863281 C 8.660156 12.929688 8.71875 12.976562 8.777344 13.007812 C 8.898438 13.070312 9.078125 13.074219 9.164062 12.964844 C 9.207031 12.90625 9.230469 12.8125 9.230469 12.683594 L 9.230469 10.585938 C 9.230469 10.445312 9.203125 10.34375 9.148438 10.273438 C 9.058594 10.152344 8.886719 10.136719 8.753906 10.203125 Z M 11.769531 6.957031 C 10.144531 6.847656 4.855469 6.847656 3.230469 6.957031 C 1.46875 7.078125 1.261719 8.140625 1.25 10.9375 C 1.261719 13.730469 1.46875 14.796875 3.230469 14.917969 C 4.855469 15.027344 10.144531 15.027344 11.769531 14.917969 C 13.53125 14.796875 13.738281 13.734375 13.75 10.9375 C 13.738281 8.144531 13.53125 7.078125 11.769531 6.957031 Z M 4.066406 13.636719 L 3.214844 13.636719 L 3.214844 8.925781 L 2.335938 8.925781 L 2.335938 8.125 L 4.949219 8.125 L 4.949219 8.925781 L 4.066406 8.925781 Z M 7.097656 13.636719 L 6.339844 13.636719 L 6.339844 13.1875 C 6.203125 13.355469 6.054688 13.480469 5.90625 13.566406 C 5.5 13.800781 4.9375 13.792969 4.9375 12.96875 L 4.9375 9.570312 L 5.695312 9.570312 L 5.695312 12.6875 C 5.695312 12.851562 5.734375 12.960938 5.894531 12.960938 C 6.042969 12.960938 6.25 12.773438 6.339844 12.65625 L 6.339844 9.570312 L 7.097656 9.570312 Z M 10.007812 12.792969 C 10.007812 13.296875 9.820312 13.6875 9.316406 13.6875 C 9.039062 13.6875 8.808594 13.585938 8.597656 13.324219 L 8.597656 13.636719 L 7.835938 13.636719 L 7.835938 8.125 L 8.597656 8.125 L 8.597656 9.898438 C 8.769531 9.691406 9 9.519531 9.269531 9.519531 C 9.824219 9.519531 10.007812 9.988281 10.007812 10.539062 Z M 12.800781 11.699219 L 11.355469 11.699219 L 11.355469 12.46875 C 11.355469 12.773438 11.382812 13.035156 11.6875 13.035156 C 12.003906 13.035156 12.023438 12.820312 12.023438 12.46875 L 12.023438 12.183594 L 12.800781 12.183594 L 12.800781 12.488281 C 12.800781 13.273438 12.464844 13.75 11.667969 13.75 C 10.945312 13.75 10.578125 13.222656 10.578125 12.488281 L 10.578125 10.664062 C 10.578125 9.957031 11.042969 9.46875 11.726562 9.46875 C 12.453125 9.46875 12.800781 9.929688 12.800781 10.664062 Z M 12.800781 11.699219 " />
-                                            </g>
+                                <li class="social__item">
+                                    <a class="social__link social__link--youtube" href="#">
+                                        <svg class="social__svg" width="15px" height="15px" fill="white">
+                                            <use fill="white" xlink:href="images/sprite.svg#youtube"></use>
                                         </svg>
-
                                     </a>
                                 </li>
-                                <li class="social__item content__item--phone">
-                                    <a class="social__link" href="#">
+                                <li class="social__item">
+                                    <a class="social__link social__link--phone" href="#">
                                         <svg width="15px" height="15px">
                                             <use xlink:href="images/sprite.svg#lenkidin"></use>
                                         </svg>
@@ -1089,7 +1283,8 @@
                                         </div>
                                     </div>
                                     <a class="ratings__text" href="#">
-                                        VINchain is creating a worldwide blockchain database of used vehicle information
+                                        VINchain is creating a worldwide blockchain database of used vehicle
+                                        information
                                         that...
                                     </a>
                                 </li>
