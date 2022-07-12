@@ -394,6 +394,11 @@
         }
     }
 
+    // &__categories {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
     &__items {
         display: flex;
         justify-content: space-between;
@@ -461,7 +466,7 @@
         }
 
         &:hover {
-            color: $ac;
+            color: $red;
         }
 
         &:active {
@@ -568,7 +573,7 @@
 
 
 .content {
-    padding: 75px 0px 0px 0px;
+    padding: 70px 0px 70px 0px;
 
     &__wrapper {
         display: flex;
@@ -683,7 +688,12 @@
         justify-content: space-between;
         flex-direction: column;
         min-height: 100%;
+    }
 
+    &__categories {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__info {
@@ -1080,7 +1090,11 @@
 
     &__items {}
 
-    &__item {}
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 
     &__inner {
         display: flex;
@@ -1089,22 +1103,55 @@
 
     &__images {
         position: relative;
+        overflow: hidden;
+        line-height: 0;
     }
+
+    &__link {}
 
     &__img {
         width: 390px;
         height: 260px;
         object-fit: cover;
+
+        transition: transform 1s, ;
+
+        &:focus {
+            color: green;
+        }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:active {
+            color: active;
+        }
     }
 
-    &__box {
-        max-width: 470px;
+
+    &__categories {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    &__content {
+        max-width: 475px;
     }
 
     &__info {
-        position: absolute;
-        top: 0;
-
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 35px;
+        line-height: 1;
     }
 
     &__subtitle {
@@ -1112,7 +1159,7 @@
         line-height: 30px;
         font-weight: 600;
         color: $black4;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         transition: color 0.5s;
 
         &:focus {
@@ -1286,6 +1333,7 @@
     // outline-color: #000000 !important;
     box-shadow: none;
     border: none;
+    text-shadow:none
 }
 
 .jq-selectbox__trigger {

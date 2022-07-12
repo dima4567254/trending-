@@ -323,23 +323,29 @@
                             <img class="blog__img" src="images/2.jpg" alt="caption">
                         </div>
                         <div class="blog__main">
-                            <div class="blog__top categories">
-                                <a class="categories__currency" href="#">
-                                    bitcoin
-                                </a>
-                                <div class="categories__icon">
-                                    <svg class="categories__svg" width="20px" height="20px">
-                                        <use fill="white" xlink:href="images/sprite.svg#calendar"></use>
-                                    </svg>
+                            <!-- !!!лишнея обертка -->
+                            <div class="blog__categories categories">
+                                <div class="latest-news__categories box">
+                                    <a class="box__currency" href="#">
+                                        bitcoin
+                                    </a>
+                                    <a class="box__icon icon" href="#">
+                                        <svg class="box__svg" fill="white" width="20px" height="20px">
+                                            <use xlink:href="images/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </div>
+
+
+
                             <div class="blog__bottom">
                                 <div class="blog__info info">
                                     <a class="info__avtar" href="#">
                                         - By Jordan Greentea
                                     </a>
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -348,7 +354,7 @@
                                     </div>
                                     <a class="info__message" href="#">
                                         <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
-                                            height="15px">
+                                            height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
                                         14
@@ -376,7 +382,7 @@
                             </a>
                         </div>
                         <div class="blog__main">
-                            <div class="blog__top categories">
+                            <div class="blog__categories categories">
                                 <a class="categories__currency" href="#">
                                     blockchain
                                 </a>
@@ -387,7 +393,7 @@
                                         - by helen park
                                     </a>
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -396,7 +402,7 @@
                                     </div>
                                     <a class="info__message" href="#">
                                         <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
-                                            height="15px">
+                                            height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
                                         14
@@ -423,7 +429,7 @@
                             <img class="blog__img" src="images/caption.jpg" alt="caption">
                         </div>
                         <div class="blog__main">
-                            <div class="blog__top categories">
+                            <div class="blog__categories categories">
                                 <a class="categories__currency" href="#">
                                     scams
                                 </a>
@@ -437,7 +443,7 @@
                                     </a>
 
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -446,7 +452,7 @@
                                     </div>
                                     <a class="info__message" href="#">
                                         <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
-                                            height="15px">
+                                            height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
                                         14
@@ -539,7 +545,7 @@
                                                     </div>
                                                     <a class="info__message" href="#">
                                                         <svg class="currency__svg" style="transform: scale(-1,1);"
-                                                            width="15px" height="15px">
+                                                            width="15px" height="15px" fill="white">
                                                             <use xlink:href="images/sprite.svg#message"></use>
                                                         </svg>
                                                         14
@@ -1008,38 +1014,38 @@
                             <ul class="latest-news__items">
                                 <li class="latest-news__item">
                                     <article class="latest-news__inner">
-                                        <a class="latest-news__images" href="#">
-                                            <img class="latest-news__img" src="images/caption.jpg" alt="">
-                                            <div class="videos-small__box box">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    bitcoin
+                                                </a>
                                                 <a class="box__icon icon" href="#">
-                                                    <svg class="box__svg" width="20px" height="20px">
-                                                        <use fill="white" xlink:href="images/sprite.svg#calendar">
-                                                        </use>
+                                                    <svg class="box__svg" fill="white" width="20px" height="20px">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
                                                 </a>
-                                                <a class="videos-small__link" href="#">
-                                                    <h2 class="videos-small__title">
-                                                        Coinbase Informs 13K
-                                                        Affected Customers Of To IRS
-                                                    </h2>
-                                                </a>
                                             </div>
-                                        </a>
-                                        <div class="latest-news__box">
-                                            <div class="latest-videos__info info">
-                                                <a class="info__avtar" href="#">
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
                                                 <div class="info__calendar">
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-
-                                                    <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
-                                                <a class="info__message" href="#">
+                                                <a class="info__message info__message--color" href="#">
                                                     <svg class="currency__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
@@ -1065,9 +1071,305 @@
                                         </div>
                                     </article>
                                 </li>
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    investment
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message info__message--color" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    Australians Can Now Purchase BTC, ETH Across 1,200 Newsstands
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Australian cryptocurrency exchange Bitcoin.com.au has made buying
+                                                    Bitcoin (BTC) and Ethereum (ETH) for fiat possible in more than
+                                                    1,200 newsstands across Australia...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    ethereum
+                                                </a>
+                                                <a class="box__icon icon" href="#">
+                                                    <svg class="box__svg" fill="white" width="20px" height="20px">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message info__message--color" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptocurrency
+                                                    Investment
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Liechtenstein lending institution Bank Frick now offers “direct
+                                                    investment” and cold storage of five cryptocurrencies, it announced
+                                                    in a press release Feb. 28, noting it is...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    scams
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message info__message--color" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    Singapore: Central Bank ‘Assessing’ Need For More Cryptocurrency
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Singapore’s central bank has said it is again looking at
+                                                    cryptocurrency regulation, appearing to amend previous comments
+                                                    about a hands-off approach, Reuters reported...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    litecoin
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message info__message--color" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    At Tax Time, Who Really Owns That Crypto Anyway? - Expert Take
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Bitcoin and other cryptocurrency is a property for federal tax
+                                                    purposes. That can be painful since just about any transfer of
+                                                    property can trigger taxes. Even crypto for crypto...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li class="latest-news__item">
+                                    <article class="latest-news__inner">
+                                        <div class="latest-news__images">
+                                            <a class="latest-news__link" href="#">
+                                                <img class="latest-news__img" src="images/caption.jpg" alt="">
+                                            </a>
+                                            <div class="latest-news__categories box">
+                                                <a class="box__currency" href="#">
+                                                    bitcoin
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="latest-news__content">
+                                            <div class="latest-news__info info">
+                                                <!-- !!! название -->
+                                                <a class="info__avtar info__avtar--color" href="#">
+                                                    - By Jordan Greentea
+                                                </a>
+                                                <div class="info__calendar">
+                                                    <svg class="info__svg" width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#calendar"></use>
+                                                    </svg>
+                                                    <!-- !!!переделать через модификатор все -->
+                                                    <time class="info__time info__time--color"
+                                                        datetime="2018-02-27T19:01:26+03:00">
+                                                        Feb 27, 2018
+                                                    </time>
+                                                </div>
+                                                <a class="info__message info__message--color" href="#">
+                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        width="15px" height="15px" fill="$black4">
+                                                        <use xlink:href="images/sprite.svg#message"></use>
+                                                    </svg>
+                                                    14
+                                                </a>
+                                            </div>
+                                            <a class="latest-news__link" href="#">
+                                                <h3 class="latest-news__subtitle">
+                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptocurrency
+                                                    Investment
+                                                </h3>
+                                            </a>
+                                            <div class="latest-news__text">
+                                                <p>
+                                                    Liechtenstein lending institution Bank Frick now offers “direct
+                                                    investment” and cold storage of five cryptocurrencies, it announced
+                                                    in a press release Feb. 28, noting it is the...
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
                             </ul>
+                            <div class="pagination">
+                                <ul class="pagination__blog pagination-list">
+                                    <li class="pagination__item pagination__item--active">
+                                        <a class="pagination__link" href="#">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">...</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">10</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">
+                                            Next
+                                            <!-- <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
+                                                height="15px" fill="$black4">
+                                                <use xlink:href="images/sprite.svg#message"></use>
+                                            </svg> -->
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
+                                                fiil="#63636a" viewBox="0 0 448 512">
+                                                <path fiil="#63636a"
+                                                    d="M438.6 278.6l-160 160C272.4 444.9 264.2 448 256 448s-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L338.8 288H32C14.33 288 .0016 273.7 .0016 256S14.33 224 32 224h306.8l-105.4-105.4c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160C451.1 245.9 451.1 266.1 438.6 278.6z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
 
                     <aside class="content__right">
                         <div class="content__subscribe  subscribe">
