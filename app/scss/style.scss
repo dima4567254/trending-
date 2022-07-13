@@ -1333,7 +1333,7 @@
     // outline-color: #000000 !important;
     box-shadow: none;
     border: none;
-    text-shadow:none
+    text-shadow: none
 }
 
 .jq-selectbox__trigger {
@@ -1631,7 +1631,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
+
         // width: 70px;
+        &--color {
+            color: $white;
+        }
     }
 
     &__svg {
@@ -1656,6 +1660,10 @@
 
         &:active {
             color: $active;
+        }
+
+        &--color {
+            color: $white;
         }
     }
 }
@@ -1840,6 +1848,114 @@
         color: $gray;
     }
 }
+
+.footer {
+    &__section {
+        background-color: $black3;
+        padding-top: 70px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $gray4;
+        padding-bottom: 70px;
+        
+    }
+
+    &__item {}
+
+    &__info {
+        max-width: 565px;
+    }
+
+    &__post {
+        margin-right: 45px;
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        line-height: em(24px);
+    }
+
+    &__text p {
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text span {
+       color: $orange;
+    }
+
+
+
+    &__info {
+        margin-right: 75px;
+    }
+
+    &__box {
+        margin-bottom: 40px;
+        line-height: em(32px);
+    }
+
+    &__Support {
+
+        margin-bottom: 5px;
+
+    }
+
+    &__tweets {
+        max-width: 300px;
+    }
+
+    // &__tel {
+    //     display: inline-block;
+    // }
+
+    &__link {
+
+        transition: color 0.5s;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $red;
+        }
+
+        &:active {
+            color: $active;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+      
+    }
+
+    &__social {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: em(60px);
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__time {}
+}
+
 
 // .categories {
 //     &__input {

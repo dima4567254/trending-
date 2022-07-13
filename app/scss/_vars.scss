@@ -21,6 +21,7 @@ $gray: #63636a;
 $gray1: #ecede7;
 $gray2: #cacad1;
 $gray3: #7d7d82;
+$gray4: #44444a;
 
 
 $gold: gold;
@@ -68,8 +69,55 @@ $green:#14B4BE;
     line-height: ($line-height / $font-size)
 }
 
+
+
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+// &__Support {
+//     line-height: em(32px);
+   
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+//REM
+// @function rem($px) {
+// 	$result: math.div($px, 16) + rem;
+// 	@return $result;
+// }
+//EM
+// @function em($px, $current: 16) {
+//     $result: math.div($px, $current)+em;
+//     @return $result;
+// }
+
+// $px: 1;
+// $current: 1;
 /*
 @include clamp(5);
 @include line-height(5);
 
 */
+
