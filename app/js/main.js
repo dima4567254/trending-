@@ -1,5 +1,27 @@
 $(function name(params) {
 
+    $('.header-top__list').slick({
+        dots: false,
+        // arrows: false,
+        // asNavFor: '.product-detalis-slider-big',
+        // focusOnSelect: true,
+        slidesToShow: 1,  /* количество слайдов на показ*/
+        slidesToScroll: 1,
+        // vertical: true,
+        // draggable: false
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    arrows: false,
+                    autoplay: true,
+                    autoplayspeed: 500,
+                }
+            },
+
+        ]
+    });
+
     const swiper = new Swiper('.swiper1', {
         // Optional parameters
         // direction: 'vertical',

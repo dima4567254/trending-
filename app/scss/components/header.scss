@@ -1,0 +1,322 @@
+.header-top {
+    background-color: $black2;
+    border-bottom: 2px solid $orange;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 13px 0;
+        flex-wrap: wrap;
+
+        @media (max-width: 992px) {
+            display: block;
+        }
+    }
+
+    &__link {
+        background-color: $red;
+        border-radius: 4px;
+        padding: 7px 11px;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-right: 10px;
+        transition: color 0.5s;
+        max-width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+
+        @media (max-width: 992px) {
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+
+            background-color: $green ;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__text {
+        font-size: 13px;
+    }
+
+    &__social {
+        gap: 20px;
+    }
+
+    &__list {
+        height: 25px;
+        max-width: 509px;
+        font-size: 13px;
+        line-height: 2;
+        position: relative;
+        letter-spacing: 0;
+
+        margin-right: auto;
+
+        @media (max-width: 992px) {
+            margin: 0 auto 20px;
+        }
+
+        @media (max-width: 575px) {
+            margin: 0 auto 50px;
+        }
+
+    }
+}
+
+.slider__item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 510px;
+    min-width: 200px;
+
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+
+    @media (max-width: 576px) {
+        @include clamp(2);
+        white-space: normal;
+        overflow: visible;
+        text-overflow: inherit;
+    }
+}
+
+.slider .slick-arrow.slick-prev {
+    right: -105px;
+    background-image: url('../images/arrow-icon.svg');
+
+    @media (max-width: 1200px) {
+        right: -55px;
+    }
+}
+
+.slider .slick-arrow.slick-next {
+    right: -75px;
+    background-image: url('../images/arrow-icon.svg');
+    transform: scale(-1, 1);
+
+    @media (max-width: 1200px) {
+        right: -35px;
+    }
+}
+
+.slider .slick-arrow {
+    background-color: transparent;
+    position: absolute;
+    font-size: 0;
+    border: none;
+    color: $gray;
+    top: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+}
+
+
+
+.header-body {
+    background-color: $black2;
+    padding: 22px 0;
+
+    &__wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media (max-width: 992px) {
+            // order: 1;
+            // justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            justify-content: space-around;
+
+        }
+
+        @media (max-width: 576px) {
+            justify-content: space-around;
+            order: 1;
+        }
+
+    }
+
+    &__items {
+        display: flex;
+        gap: 35px;
+        flex-wrap: wrap;
+
+        @media (max-width: 1200px) {
+            justify-content: center;
+        }
+
+        @media (max-width: 992px) {
+            // order: 1;
+            gap: 55px;
+            margin-top: 20px;
+        }
+        @media (max-width: 576px) {
+            gap: 20px;
+         }
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        // padding: 25px;
+
+        // @media (max-width: 992px) {
+        //     padding: 20px;
+        // }
+
+        // @media (max-width: 1200px) {
+        //     padding: 25px;
+        // }
+
+        // @media (max-width: 576px) {
+        //     margin-left: -25px;
+        // }
+
+        @media (max-width: 1200px) {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 992px) {
+            margin-right: 0px;
+        }
+    }
+
+    &__svg {
+        margin-right: 5px;
+        z-index: 999;
+
+    }
+
+    // поменять если не сделаю кнопку 
+    &__icon {
+        border-radius: 50%;
+        border: 1px solid transparent;
+        background-color: $white;
+        margin-right: 10px;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 1200px) {
+            margin-right: 20px;
+        }
+    }
+
+    &__text {
+        color: $orange;
+        text-transform: uppercase;
+        // margin-bottom: 5px;
+        line-height: em(26px);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // display: inline-block;
+        max-width: 80px;
+        min-width: 30px;
+    }
+
+    &__info {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // display: inline-block;
+        max-width: 90px;
+        min-width: 30px;
+    }
+
+    &__increased {
+        color: $green2;
+
+    }
+
+    &__dropped {
+        color: $red;
+    }
+
+
+    &__box {
+        display: inline;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // display: inline-block;
+        max-width: 56px;
+        min-width: 30px;
+    }
+}
+
+.menu {
+    background-color: $orange;
+    padding: 17px 0;
+
+    &__items {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        font-weight: 600;
+        margin-right: 35px;
+    }
+
+    &__link {
+        transition: color 0.5s;
+        outline-color: $black;
+        outline-offset: 5px;
+
+        &:focus {
+            color: $green;
+        }
+
+        &:hover {
+            color: $black;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+    }
+
+}

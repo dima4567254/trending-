@@ -70,10 +70,13 @@ body {
     display: flex;
     z-index: 100;
 
-    &__link {
-        padding: 11px 13px;
-        border-radius: 6px;
+    @media (max-width: 992px) {
+        justify-content: center;
+    }
 
+    &__link {
+        padding: 15px;
+        border-radius: 6px;
 
         &--facebook {
             background-color: #5677b9;
@@ -109,6 +112,27 @@ body {
     //         color: $active;
     //     }
     // }
+}
+
+.logo {
+    &__img {
+        height: 34px;
+        width: 88px;
+        object-fit: cover;
+        margin-right: 20px;
+
+        @media (max-width: 992px) {
+            margin-right: 40px;
+        }
+
+        @media (max-width: 768px) {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 576px) {
+            margin-right: 0px;
+        }
+    }
 }
 
 .box {

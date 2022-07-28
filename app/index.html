@@ -14,7 +14,7 @@
 
 
 <!--
-    1 проблемау поля слайдера
+    
     2 проблема с кружочком
     3. заполнить альт
     4. увеличить значки в шапке
@@ -24,57 +24,27 @@
 
 <body>
     <header class="header">
-        <div class="trending-news">
+        <div class="header__top  header-top">
             <div class="container">
-                <div class="trending-news__inner">
-                    <div class="trending-news__left">
-                        <a class="trending-news__link" href="#">
-                            trending-news
-                        </a>
-                        <!-- <div class="trending-news__text">
-                            <p> VC Investments In Blockchain Companies On Track To Exceed
-                                2017’s
-                                Numberss
-                            </p>
-                        </div> -->
-                        <!-- !!!сделать все бем блоками -->
-                        <div class="swiper1 ">
-                            <div class="trending-news-swiper__wrapper swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="swiper__text">
-                                        <p>
-                                            VC Investments In Blockchain Companies On Track To Exceed
-                                            2017’s
-                                            Numberss
-                                        </p>
-                                    </div>
-
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-text">
-                                        <p>2</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-text">
-                                        <p>3</p>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="swiper-text">
-                                        <p>4</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="custom-next"></div>
-                            <div class="custom-prev"></div>
-
-
-                            <!-- <div class="swiper-pagination"></div> -->
-                        </div>
-
-                    </div>
-                    <ul class="trending-news__social social">
+                <div class="header-top__inner">
+                    <a class="header-top__link" href="#">
+                        trending-news
+                    </a>
+                    <ul class="header-top__list slider">
+                        <li class="slider__item">
+                            VC Investments In Blockchain Companies On Track To Exceed 2017’s Numberss
+                        </li>
+                        <li class="slider__item">
+                            VC Investments In Blockchain Companies On Track
+                        </li>
+                        <li class="slider__item">
+                            VC Investments In Blockchain Companies
+                        </li>
+                        <li class="slider__item">
+                            VC Investments In Blockchain
+                        </li>
+                    </ul>
+                    <ul class="header-top__social social">
                         <li class="social__item">
                             <a class="social__link" href="#">
                                 <svg class="social__svg" width="15px" height="15px">
@@ -106,37 +76,40 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-        <div class="currency">
+        <div class="header__body header-body">
             <div class="container">
-                <div class="currency__wraper">
-                    <a class="logo" href="#">
-                        <img class="logo__img " src="images/logo.svg" alt="logo">
+                <div class="header-body__wraper">
+                    <a class="header-body__logo logo" href="#">
+                        <!-- <img class="logo__img " src="images/logo.svg" alt="logo"> -->
+                        <svg class="currency__svg" width="100px" height="32px">
+                            <use fill="white" xlink:href="images/sprite.svg#logo"></use>
+                        </svg>
+                        <span class="sr-only">logo</span>
                     </a>
-                    <ul class="currency__items">
-                        <li class="currency__item">
-                            <div class="currency__inner">
-                                <!-- хз что это сылка или кнопка -->
-                                <div class="currency__icon">
+                    <ul class="header-body__items">
+                        <li class="header-body__item">
+                            <div class="header-body__inner">
+                                <div class="header-body__icon">
                                     <svg width="15px" height="15px">
                                         <use xlink:href="images/sprite.svg#down-arrow"></use>
                                     </svg>
+                                    <span class="sr-only">down-arrow</span>
                                 </div>
-                                <div class="currency__contant">
-                                    <div class="currency__text">
+                                <div class="header-body__contant">
+                                    <div class="header-body__text">
                                         btc
                                     </div>
-                                    <div class="currency__info">
+                                    <div class="header-body__info">
                                         <span>$</span>
                                         11,173.3
                                     </div>
-                                    <div class="currency__dropped">
-
-                                        <svg class="currency__svg" width="15px" height="15px">
-                                            <use fill="#e42d23" xlink:href="images/sprite.svg#chart-down"></use>
+                                    <div class="header-body__dropped">
+                                        <svg class="header-body__svg" width="15px" height="15px" fill="#e42d23">
+                                            <use xlink:href="images/sprite.svg#chart-down"></use>
                                         </svg>
-                                        <div class="currency__box">
+                                        <span class="sr-only">chart-down</span>
+                                        <div class="header-body__box">
                                             <span>-</span>
                                             2.31
                                             <span>%</span>
@@ -145,27 +118,29 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="currency__item">
-                            <div class="currency__inner">
-                                <div class="currency__icon">
+                        <li class="header-body__item">
+                            <div class="header-body__inner">
+                                <div class="header-body__icon">
                                     <svg width="15px" height="15px">
                                         <use xlink:href="images/sprite.svg#down-arrow"></use>
                                     </svg>
+                                    <span class="sr-only">down-arrow</span>
                                 </div>
-                                <div class="currency__contant">
-                                    <div class="currency__text">
+                                <div class="header-body__contant">
+                                    <div class="header-body__text">
                                         etn
                                     </div>
-                                    <div class="currency__info">
+                                    <div class="header-body__info">
                                         <span>$</span>
                                         851.77
                                     </div>
-                                    <div class="currency__dropped">
+                                    <div class="header-body__dropped">
 
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                        <svg class="header-body__svg" width="15px" height="15px">
                                             <use fill="#e42d23" xlink:href="images/sprite.svg#chart-down"></use>
                                         </svg>
-                                        <div class="currency__box">
+                                        <span class="sr-only">chart-down</span>
+                                        <div class="header-body__box">
                                             <span>-</span>
                                             1.13
                                             <span>%</span>
@@ -175,27 +150,28 @@
                             </div>
                         </li>
 
-                        <li class="currency__item">
-                            <div class="currency__inner">
-                                <div class="currency__icon">
+                        <li class="header-body__item">
+                            <div class="header-body__inner">
+                                <div class="header-body__icon">
                                     <svg width="15px" height="15px">
                                         <use xlink:href="images/sprite.svg#down-arrow"></use>
                                     </svg>
+                                    <span class="sr-only">down-arrow</span>
                                 </div>
-                                <div class="currency__contant">
-                                    <div class="currency__text">
+                                <div class="header-body__contant">
+                                    <div class="header-body__text">
                                         xmr
                                     </div>
-                                    <div class="currency__info">
+                                    <div class="header-body__info">
                                         <span>$</span>
                                         350.01
                                     </div>
-                                    <div class="currency__increased">
-
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                    <div class="header-body__increased">
+                                        <svg class="header-body__svg" width="15px" height="15px">
                                             <use fill="#3bed23" xlink:href="images/sprite.svg#chart-down"></use>
                                         </svg>
-                                        <div class="currency__box">
+                                        <span class="sr-only">chart-down</span>
+                                        <div class="header-body__box">
                                             <span>+</span>
                                             0.21
                                             <span>%</span>
@@ -205,62 +181,60 @@
                             </div>
                         </li>
 
-                        <li class="currency__item">
-                            <div class="currency__inner">
-                                <!-- <button class="currency__button" type="button"> -->
-                                <div class="currency__icon">
+                        <li class="header-body__item">
+                            <div class="header-body__inner">
+                                <div class="header-body__icon">
                                     <svg width="15px" height="15px">
                                         <use xlink:href="images/sprite.svg#down-arrow"></use>
                                     </svg>
+                                    <span class="sr-only">down-arrow</span>
                                 </div>
-                                <!-- </button> -->
-                                <div class="currency__contant">
-                                    <div class="currency__text">
+                                <div class="header-body__contant">
+                                    <div class="header-body__text">
                                         xrp
                                     </div>
-                                    <div class="currency__info">
+                                    <div class="header-body__info">
                                         <span>$</span>
                                         0.9089
                                     </div>
-                                    <div class="currency__increased">
-
-                                        <svg class="currency__svg" width="15px" height="15px">
+                                    <div class="header-body__increased">
+                                        <svg class="header-body__svg" width="15px" height="15px">
                                             <use fill="#3bed23" xlink:href="images/sprite.svg#chart-down"></use>
                                         </svg>
-                                        <div class="currency__box">
+                                        <span class="sr-only">chart-down</span>
+                                        <div class="header-body__box">
                                             <span>+</span>
                                             0.70
                                             <span>%</span>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="currency__increased">
-                                      
-                                    </div> -->
                             </div>
                         </li>
                     </ul>
-                    <a class="currency__link" href="#">
-                        <svg width="15px" height="15px">
+                    <a class="header-body__link" href="#">
+                        <svg width="20px" height="20px">
                             <use xlink:href="images/sprite.svg#search"></use>
                         </svg>
+                        <span class="sr-only"> icon search</span>
                     </a>
                 </div>
             </div>
         </div>
 
+        <!-- header-bottom
         <nav class="menu">
             <!-- <ul class="menu__items">
                 <li class="menu__item">
                     <a class="menu__link menu__link--active" href="#">
                         Home
                     </a>
-                </li> -->
+                </li> 
             <div class="container">
                 <ul class="menu__items">
                     <li class="menu__item">
                         <div class="dropdown">
-                            <!-- не элемент списка -->
+                            <!-- не элемент списка 
                             <select class="dropdown__select">
                                 <option class="dropdown__optoon dropdown-svg" value="1" name="email">
                                     <a class="menu__link" href="#technology">
@@ -298,7 +272,7 @@
                         </a>
                     </li>
                     <button class="menu__btn" type="button">
-                        <!-- <span></span> -->
+                        <!-- <span></span> 
                         <svg width="16px" height="16px" fill="white">
                             <use xlink:href="images/sprite.svg#dots"></use>
                         </svg>
@@ -315,7 +289,7 @@
                 site about cryptocurrencies
             </h1>
             <!--1это не секция 
-            2 разобратсяс медиа запросами и проверить оберки-->
+            2 разобратсяс медиа запросами и проверить оберки
             <ul class="blog__items">
                 <li class="blog__item">
                     <article class="blog__article blog-article">
@@ -323,10 +297,10 @@
                             <img class="blog__img" src="images/2.jpg" alt="caption">
                         </div>
                         <div class="blog__main">
-                            <!-- !!!лишнея обертка -->
+                            <!-- !!!лишнея обертка 
                             <div class="blog__categories categories">
                                 <div class="latest-news__categories box">
-                                    <a class="box__currency" href="#">
+                                    <a class="box__header-body" href="#">
                                         bitcoin
                                     </a>
                                     <a class="box__icon icon" href="#">
@@ -345,7 +319,7 @@
                                         - By Jordan Greentea
                                     </a>
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
+                                        <svg class="header-body__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -353,7 +327,7 @@
                                         </time>
                                     </div>
                                     <a class="info__message" href="#">
-                                        <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
+                                        <svg class="header-body__svg" style="transform: scale(-1,1);" width="15px"
                                             height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
@@ -383,7 +357,7 @@
                         </div>
                         <div class="blog__main">
                             <div class="blog__categories categories">
-                                <a class="categories__currency" href="#">
+                                <a class="categories__header-body" href="#">
                                     blockchain
                                 </a>
                             </div>
@@ -393,7 +367,7 @@
                                         - by helen park
                                     </a>
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
+                                        <svg class="header-body__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -401,7 +375,7 @@
                                         </time>
                                     </div>
                                     <a class="info__message" href="#">
-                                        <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
+                                        <svg class="header-body__svg" style="transform: scale(-1,1);" width="15px"
                                             height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
@@ -430,11 +404,11 @@
                         </div>
                         <div class="blog__main">
                             <div class="blog__categories categories">
-                                <a class="categories__currency" href="#">
+                                <a class="categories__header-body" href="#">
                                     scams
                                 </a>
                                 <!-- <div class="blog__icon">
-                                </div> -->
+                                </div> 
                             </div>
                             <div class="blog__bottom">
                                 <div class="blog__info info">
@@ -443,7 +417,7 @@
                                     </a>
 
                                     <div class="info__calendar">
-                                        <svg class="currency__svg" width="15px" height="15px" fill="white">
+                                        <svg class="header-body__svg" width="15px" height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#calendar"></use>
                                         </svg>
                                         <time class="info__time" datetime="2018-02-27T19:01:26+03:00">
@@ -451,7 +425,7 @@
                                         </time>
                                     </div>
                                     <a class="info__message" href="#">
-                                        <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
+                                        <svg class="header-body__svg" style="transform: scale(-1,1);" width="15px"
                                             height="15px" fill="white">
                                             <use xlink:href="images/sprite.svg#message"></use>
                                         </svg>
@@ -473,13 +447,13 @@
                     </article>
                 </li>
             </ul>
-            <!-- !!! контейнер вне -->
+            <!-- !!! контейнер вне 
             <div class="container">
                 <div class="blog__gambling gambling">
                     <a class="gambling__link" href="#">
                         <div class="gambling__inner">
                             <div class="gambling__icon">
-                                <svg class="currency__svg" width="41px" height="36px">
+                                <svg class="header-body__svg" width="41px" height="36px">
                                     <use xlink:href="images/sprite.svg#twitter"></use>
                                 </svg>
                             </div>
@@ -505,8 +479,8 @@
                     <div class="content__left">
                         <div class="latest-videos">
                             <h2 class="latest-videos__title title">
-                                <!-- !!! -->
-                                <svg class="currency__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                                <!-- !!! 
+                                <svg class="header-body__svg" width="15px" height="10px" viewBox="0 0 15 10">
                                     <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
                                 </svg>
                                 latest videos
@@ -518,9 +492,9 @@
                                             <img class="latest-videos__img" src="images/caption.jpg" alt="">
                                         </a>
                                         <div class="latest-videos__box">
-                                            <!-- !!!придумать название -->
+                                            <!-- !!!придумать название
                                             <div class="latest-videos__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     bitcoin
                                                 </a>
                                                 <a class="box__icon icon" href="#">
@@ -544,7 +518,7 @@
                                                         </time>
                                                     </div>
                                                     <a class="info__message" href="#">
-                                                        <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                        <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                             width="15px" height="15px" fill="white">
                                                             <use xlink:href="images/sprite.svg#message"></use>
                                                         </svg>
@@ -639,13 +613,13 @@
                             </div>
                         </div>
 
-                        <!-- !!!название -->
+                        <!-- !!!название 
                         <div class="trending-filter">
                             <div class="trending-filter__wrapper">
                                 <h2 class="trending-filter__title">
-                                    <!-- !!! -->
-                                    <!-- !!!все свг назвать под титул бем блок   -->
-                                    <svg class="currency__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                                    <!-- !!! 
+                                    <!-- !!!все свг назвать под титул бем блок   
+                                    <svg class="header-body__svg" width="15px" height="10px" viewBox="0 0 15 10">
                                         <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
                                     </svg>
                                     trending news
@@ -701,11 +675,11 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
-                                                    Crypto VC Firm Digital Currency Group Invests In Pro-Crypto...
+                                                    Crypto VC Firm Digital header-body Group Invests In Pro-Crypto...
                                                 </h2>
                                             </a>
                                         </article>
@@ -732,7 +706,7 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
@@ -763,7 +737,7 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
@@ -794,7 +768,7 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
@@ -825,7 +799,7 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
@@ -856,7 +830,7 @@
                                                     </svg>
                                                     46,987
                                                 </div>
-                                                <!-- !!!может не титул -->
+                                                <!-- !!!может не титул 
                                             </div>
                                             <a class="trending-filter__link" href="#">
                                                 <h2 class="trending-filter__title">
@@ -881,7 +855,7 @@
                                 <ul class="swiper-wrapper picks-swiper__wrapper picks__items">
                                     <li class="picks__item swiper-slide">
                                         <div class="picks__wrapper">
-                                            <!-- !!! не совсем правиьное название -->
+                                            <!-- !!! не совсем правиьное название 
                                             <div class="picks__images" href="#">
                                                 <img class="picks__img" src="images/caption.jpg" alt="">
                                             </div>
@@ -911,7 +885,7 @@
                                     </li>
                                     <li class="picks__item swiper-slide">
                                         <div class="picks__wrapper">
-                                            <!-- !!! не совсем правиьное название -->
+                                            <!-- !!! не совсем правиьное название 
                                             <a class="picks__images" href="#">
                                                 <img class="picks__img" src="images/caption.jpg" alt="">
                                             </a>
@@ -941,7 +915,7 @@
                                     </li>
                                     <li class="picks__item swiper-slide">
                                         <div class="picks__wrapper">
-                                            <!-- !!! не совсем правиьное название -->
+                                            <!-- !!! не совсем правиьное название 
                                             <a class="picks__images" href="#">
                                                 <img class="picks__img" src="images/caption.jpg" alt="">
                                             </a>
@@ -970,7 +944,7 @@
                                     </li>
                                     <li class="picks__item swiper-slide">
                                         <div class="picks__wrapper">
-                                            <!-- !!! не совсем правиьное название -->
+                                            <!-- !!! не совсем правиьное название 
                                             <a class="picks__images" href="#">
                                                 <img class="picks__img" src="images/caption.jpg" alt="">
                                             </a>
@@ -1019,7 +993,7 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     bitcoin
                                                 </a>
                                                 <a class="box__icon icon" href="#">
@@ -1031,7 +1005,7 @@
                                         </div>
                                         <div class="latest-news__content">
                                             <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1039,14 +1013,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1065,7 +1039,7 @@
                                                     post on its
                                                     site Tuesday, Feb. 27 that it has to postpone the launch of its
                                                     planned
-                                                    cryptocurrency exchange...
+                                                    cryptoheader-body exchange...
                                                 </p>
                                             </div>
                                         </div>
@@ -1078,14 +1052,14 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     investment
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="latest-news__content">
                                             <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1093,14 +1067,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1114,7 +1088,7 @@
                                             </a>
                                             <div class="latest-news__text">
                                                 <p>
-                                                    Australian cryptocurrency exchange Bitcoin.com.au has made buying
+                                                    Australian cryptoheader-body exchange Bitcoin.com.au has made buying
                                                     Bitcoin (BTC) and Ethereum (ETH) for fiat possible in more than
                                                     1,200 newsstands across Australia...
                                                 </p>
@@ -1129,7 +1103,7 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     ethereum
                                                 </a>
                                                 <a class="box__icon icon" href="#">
@@ -1141,7 +1115,7 @@
                                         </div>
                                         <div class="latest-news__content">
                                             <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1149,14 +1123,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1165,7 +1139,7 @@
                                             </div>
                                             <a class="latest-news__link" href="#">
                                                 <h3 class="latest-news__subtitle">
-                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptocurrency
+                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptoheader-body
                                                     Investment
                                                 </h3>
                                             </a>
@@ -1186,14 +1160,14 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     scams
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="latest-news__content">
                                             <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1201,14 +1175,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1217,13 +1191,13 @@
                                             </div>
                                             <a class="latest-news__link" href="#">
                                                 <h3 class="latest-news__subtitle">
-                                                    Singapore: Central Bank ‘Assessing’ Need For More Cryptocurrency
+                                                    Singapore: Central Bank ‘Assessing’ Need For More Cryptoheader-body
                                                 </h3>
                                             </a>
                                             <div class="latest-news__text">
                                                 <p>
                                                     Singapore’s central bank has said it is again looking at
-                                                    cryptocurrency regulation, appearing to amend previous comments
+                                                    cryptoheader-body regulation, appearing to amend previous comments
                                                     about a hands-off approach, Reuters reported...
                                                 </p>
                                             </div>
@@ -1237,14 +1211,14 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     litecoin
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="latest-news__content">
-                                            <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                            <div class="latest-news__infoinfo">
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1252,14 +1226,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1273,7 +1247,7 @@
                                             </a>
                                             <div class="latest-news__text">
                                                 <p>
-                                                    Bitcoin and other cryptocurrency is a property for federal tax
+                                                    Bitcoin and other cryptoheader-body is a property for federal tax
                                                     purposes. That can be painful since just about any transfer of
                                                     property can trigger taxes. Even crypto for crypto...
                                                 </p>
@@ -1288,14 +1262,14 @@
                                                 <img class="latest-news__img" src="images/caption.jpg" alt="">
                                             </a>
                                             <div class="latest-news__categories box">
-                                                <a class="box__currency" href="#">
+                                                <a class="box__header-body" href="#">
                                                     bitcoin
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="latest-news__content">
                                             <div class="latest-news__info info">
-                                                <!-- !!! название -->
+                                                <!-- !!! название 
                                                 <a class="info__avtar info__avtar--color" href="#">
                                                     - By Jordan Greentea
                                                 </a>
@@ -1303,14 +1277,14 @@
                                                     <svg class="info__svg" width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#calendar"></use>
                                                     </svg>
-                                                    <!-- !!!переделать через модификатор все -->
+                                                    <!-- !!!переделать через модификатор все 
                                                     <time class="info__time info__time--color"
                                                         datetime="2018-02-27T19:01:26+03:00">
                                                         Feb 27, 2018
                                                     </time>
                                                 </div>
                                                 <a class="info__message info__message--color" href="#">
-                                                    <svg class="currency__svg" style="transform: scale(-1,1);"
+                                                    <svg class="header-body__svg" style="transform: scale(-1,1);"
                                                         width="15px" height="15px" fill="$black4">
                                                         <use xlink:href="images/sprite.svg#message"></use>
                                                     </svg>
@@ -1319,7 +1293,7 @@
                                             </div>
                                             <a class="latest-news__link" href="#">
                                                 <h3 class="latest-news__subtitle">
-                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptocurrency
+                                                    Liechtenstein’s Bank Frick Introduces ‘Direct’ Cryptoheader-body
                                                     Investment
                                                 </h3>
                                             </a>
@@ -1354,10 +1328,10 @@
                                     <li class="pagination__item">
                                         <a class="pagination__link" href="#">
                                             Next
-                                            <!-- <svg class="currency__svg" style="transform: scale(-1,1);" width="15px"
+                                            <!-- <svg class="header-body__svg" style="transform: scale(-1,1);" width="15px"
                                                 height="15px" fill="$black4">
                                                 <use xlink:href="images/sprite.svg#message"></use>
-                                            </svg> -->
+                                            </svg> 
                                             <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px"
                                                 fiil="#63636a" viewBox="0 0 448 512">
                                                 <path fiil="#63636a"
@@ -1395,7 +1369,7 @@
                                 <li class="social__item">
                                     <a class="social__link social__link--facebook" href="#">
                                         <svg class="social__svg" width="15px" height="15px">
-                                            <!-- !!!разширить сылку -->
+                                            <!-- !!!разширить сылку 
                                             <use class="social__use" xlink:href="images/sprite.svg#facebook"></use>
                                         </svg>
                                     </a>
@@ -1488,7 +1462,7 @@
                                     <div class="ratings__images">
                                         <div class="ratings__box">
                                             <div class="ratings__subtext">
-                                                <!-- !!! обернул в спан может не надо -->
+                                                <!-- !!! обернул в спан может не надо 
                                                 <span> 4.2</span>
                                             </div>
                                             <div class="ratings__icon">
@@ -1602,7 +1576,7 @@
                             <ul class="recent-posts__items">
                                 <li class="recent-posts__item">
                                     <div class="recent-posts__inner">
-                                        <!-- !!! не совсем правиьное название -->
+                                        <!-- !!! не совсем правиьное название 
                                         <a class="recent-posts__images" href="#">
                                             <img class="recent-posts__img" src="images/caption.jpg" alt="">
                                         </a>
@@ -1649,7 +1623,7 @@
                                             </div>
                                             <a class="recent-posts__link" href="#">
                                                 <h3 class="recent-posts__title">
-                                                    WSJ: SEC Launches Cryptocurrency Probe
+                                                    WSJ: SEC Launches Cryptoheader-body Probe
                                                 </h3>
                                             </a>
                                         </div>
@@ -1936,7 +1910,7 @@
                             <li class="social__item ">
                                 <a class="social__link social__link--facebook" href="#">
                                     <svg class="social__svg" width="15px" height="15px">
-                                        <!-- !!!разширить сылку -->
+                                        <!-- !!!разширить сылку 
                                         <use class="social__use" xlink:href="images/sprite.svg#facebook"></use>
                                     </svg>
                                 </a>
@@ -1967,7 +1941,7 @@
 
                     <div class="footer__item footer__post">
                         <h2 class="footer__title">
-                            <svg class="currency__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                            <svg class="header-body__svg" width="15px" height="10px" viewBox="0 0 15 10">
                                 <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
                             </svg>
                             blockchain
@@ -1975,7 +1949,7 @@
                         <ul class="recent-posts__items">
                             <li class="recent-posts__item">
                                 <div class="recent-posts__inner">
-                                    <!-- !!! не совсем правиьное название -->
+                                    <!-- !!! не совсем правиьное название 
                                     <a class="recent-posts__images" href="#">
                                         <img class="recent-posts__img" src="images/caption.jpg" alt="">
                                     </a>
@@ -2016,7 +1990,7 @@
                                         </div>
                                         <a class="recent-posts__link" href="#">
                                             <h3 class="recent-posts__title recent-posts__title--color">
-                                                WSJ: SEC Launches Cryptocurrency Probe
+                                                WSJ: SEC Launches Cryptoheader-body Probe
                                             </h3>
                                         </a>
                                     </div>
@@ -2051,13 +2025,13 @@
 
                     <div class="footer__item footer__tweets">
                         <h2 class="footer__title">
-                            <svg class="currency__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                            <svg class="header-body__svg" width="15px" height="10px" viewBox="0 0 15 10">
                                 <use fill="white" xlink:href="images/sprite.svg#two-circles"></use>
                             </svg>
                             latest tweets
                         </h2>
 
-                        <div class="footer__text">
+                        <div class="footer__subtext">
                             <p>
                                 Did you know an
                                 <span>
@@ -2065,8 +2039,9 @@
                                         @twitter
                                     </a>
                                 </span>
-
-                                subscription now gets you access to 1000+ >
+                            </p>
+                            <p>
+                                subscription now gets you access to 1000+
                                 <span>
                                     <a class="footer__link" href="#">
                                         @twitter
@@ -2081,29 +2056,82 @@
                             </p>
                         </div>
                         <time class="footer__time" datetime="2018-01-14T19:01:21+03:00">
-                            <svg class="currency__svg" width="15px" height="10px" viewBox="0 0 15 10">
+                            <svg class="header-body__svg" width="15px" height="10px" viewBox="0 0 15 10">
                                 <use fill="white" xlink:href="images/sprite.svg#twitter"></use>
                             </svg>
-                            Tweeted on 01:21 AM May 14
+                            Tweeted on <span>01:21 AM May 14</span>
                         </time>
                     </div>
                 </div>
-            </div>
-            <div class="footer__bottom">
-                .footer__ic
+
+                <div class="footer__center">
+                    <div class="footer__icon">
+                        <svg class="footer__svg" width="40px" height="40px">
+                            <use fill="white" xlink:href="images/sprite.svg#twitter"></use>
+                        </svg>
+                    </div>
+
+                    <div class="footer__text">
+                        <p>
+                            Join us on Telegram Bitther covers Fintech, Blockchain and Bitcoin bringing you the latest
+                            news and
+                        </p>
+                        <p> analyses on the future of money.</p>
+                    </div>
+                    <a href="#">
+                        view chanel
+                    </a>
+                </div>
+
+                <div class="footer__bottom">
+
+                    <div class="footer__copy">
+                        Copyright © 2020 . All Rights Reserved.
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="">
+                                Advertise
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="">
+                                Donate
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="">
+                                Site Map
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
             </div>
         </section>
-    </footer>
+    </footer> -->
 
-
-    <!--bottom
+        <!-- <select class="select-css">
+        <option>This is a native select element</option>
+        <option>Apples</option>
+        <option>Bananas</option>
+        <option>Grapes</option>
+        <option>Oranges</option>
+    </select> -->
+        <!--bottom
 <a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
     href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
     <span class="sr-only">play video</span>
 </a>
 -->
 
-    <!--
+        <!--
   <form class="footer-top__form">
       <label class="sr-only" for="email">
           Enter your email
@@ -2121,7 +2149,7 @@
   </form>
 
 -->
-    <script src="js/main.min.js"></script>
+        <script src="js/main.min.js"></script>
 </body>
 
 </html>

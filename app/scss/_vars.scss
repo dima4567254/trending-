@@ -11,6 +11,7 @@ $green2: #3bed23;
 $white: #FFFFFF;
 $white2: #fefeff;
 $white3: #dfdfe0;
+$blue: #34abdf;
 
 
 $black: #000000;
@@ -22,6 +23,7 @@ $gray1: #ecede7;
 $gray2: #cacad1;
 $gray3: #7d7d82;
 $gray4: #44444a;
+$gray5: #81827e;
 
 
 $gold: gold;
@@ -48,25 +50,25 @@ $green:#14B4BE;
 */
 
 @mixin clamp($line-clamp, ) {
-    display: -webkit-box;
-    -webkit-line-clamp: $line-clamp;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $line-clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
 }
 
 @mixin clamp2($max-width, $inline-block) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: $inline-block;
-    max-width: $max-width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: $inline-block;
+  max-width: $max-width;
 
 }
 
 @mixin line-height($font-size, $line-height, ) {
 
-    line-height: ($line-height / $font-size)
+  line-height: ($line-height / $font-size)
 }
 
 
@@ -88,11 +90,42 @@ $browser-context: 16;
 
 // &__Support {
 //     line-height: em(32px);
-   
+
 // }
 
 
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
 
+@mixin rem-fallback($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value*16}px;
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+    }
+  }
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $remValues: #{$remValues + $value}rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}
+
+// @include rem-fallback(margin, 10, 20, 30, 40);
 
 
 
@@ -120,4 +153,3 @@ $browser-context: 16;
 @include line-height(5);
 
 */
-
