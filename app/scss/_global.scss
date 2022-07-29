@@ -95,23 +95,6 @@ body {
             background-color: #235f85;
         }
     }
-
-    // &__svg symbol path {
-
-    //     transition: color 0.5s;
-
-    //     &:focus {
-    //         color: $green;
-    //     }
-
-    //     &:hover {
-    //         fill: red;
-    //     }
-
-    //     &:active {
-    //         color: $active;
-    //     }
-    // }
 }
 
 .logo {
@@ -122,16 +105,11 @@ body {
         margin-right: 20px;
 
         @media (max-width: 992px) {
-            margin-right: 40px;
+            margin: 0px 0px 40px 0px;
         }
-
-        @media (max-width: 768px) {
-            margin-right: 20px;
-        }
-
         @media (max-width: 576px) {
-            margin-right: 0px;
-        }
+            margin: 0px 0px 20px 0px;
+         }
     }
 }
 

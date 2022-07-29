@@ -71,6 +71,13 @@ $(function name(params) {
         }
     });
 
+    $('.menu__btn').on('click', function () {
+        $('.menu__items').toggleClass('menu__items--active');
+
+        /*$('.header__logo').toggleClass('menu__list--active');
+        $('.intro__btn').toggleClass('menu__list--active');*/
+    });
+
     var mixer = mixitup('.trending-filter__items');
 
     //   $('select').styler();
