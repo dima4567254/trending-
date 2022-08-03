@@ -1,46 +1,48 @@
 .header {
-    @media (max-width: 992px) {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    // @media (max-width: 992px) {
+    //     display: flex;
+    //     flex-direction: column-reverse;
+    // }
 }
 
 .header-top {
     background-color: $black2;
-    border-bottom: 2px solid $orange;
+    border-bottom: .2rem solid $orange;
 
     &__inner {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 20px 0;
+        // padding: 20px 0;
+        @include rem-fallback(padding, 2, 0, 2, 0);
         flex-wrap: wrap;
+        // 1260 67
 
-        @media (max-width: 992px) {
-            display: block;
-        }
+        // @media (max-width: 992px) {
+        //     display: block;
+        // }
     }
 
     &__link {
         background-color: $red;
-        border-radius: 4px;
-        padding: 7px 11px;
-        font-size: 13px;
+        border-radius: .4rem;
+        padding: .7rem 1.1rem;
+        font-size: 1.3rem;
         font-weight: 600;
         text-transform: uppercase;
-        margin-right: 10px;
+        margin-right: 1rem;
         transition: color 0.5s;
-        max-width: 200px;
+        max-width: 20rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         display: inline-block;
 
-        @media (max-width: 992px) {
-            margin: 0 auto 20px;
-            display: flex;
-            justify-content: center;
-        }
+        // @media (max-width: 992px) {
+        //     margin: 0 auto 2rem;
+        //     display: flex;
+        //     justify-content: center;
+        // }
 
         &:focus {
             color: $green;
@@ -57,30 +59,31 @@
     }
 
     &__text {
-        font-size: 13px;
+        font-size: 1.3rem;
     }
 
     &__social {
-        gap: 20px;
+        gap: 2rem;
     }
 
     &__list {
-        height: 25px;
-        max-width: 509px;
-        font-size: 13px;
-        line-height: 2;
+        height: 2.5rem;
+        max-width: 50.9rem;
+        font-size: 1.3rem;
+        line-height: 200%;
+        // 26
         position: relative;
         letter-spacing: 0;
 
         margin-right: auto;
 
-        @media (max-width: 992px) {
-            margin: 0 auto 20px;
-        }
+        // @media (max-width: 992px) {
+        //     margin: 0 auto 2rem;
+        // }
 
-        @media (max-width: 575px) {
-            margin: 0 auto 50px;
-        }
+        // @media (max-width: 575px) {
+        //     margin: 0 auto 5rem;
+        // }
 
     }
 }
@@ -90,40 +93,40 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    max-width: 510px;
-    min-width: 200px;
+    max-width: 51rem;
+    min-width: 20rem;
 
-    @media (max-width: 992px) {
-        text-align: center;
-    }
+    // @media (max-width: 992px) {
+    //     text-align: center;
+    // }
 
-    @media (max-width: 576px) {
-        @include clamp(2);
-        white-space: normal;
-        overflow: visible;
-        text-overflow: inherit;
-    }
+    // @media (max-width: 576px) {
+    //     @include clamp(2);
+    //     white-space: normal;
+    //     overflow: visible;
+    //     text-overflow: inherit;
+    // }
 }
 
 .slider .slick-arrow.slick-prev {
 
-    right: -75px;
+    right: -7.5rem;
     background-image: url('../images/arrow-icon.svg');
     transform: scale(-1, 1);
 
-    @media (max-width: 1200px) {
-        right: -55px;
-    }
+    // @media (max-width: 1200px) {
+    //     right: -3.5rem;
+    // }
 }
 
 .slider .slick-arrow.slick-next {
-    right: -105px;
+    right: -1.5rem;
     background-image: url('../images/arrow-icon.svg');
 
 
-    @media (max-width: 1200px) {
-        right: -35px;
-    }
+    // @media (max-width: 1200px) {
+    //     right: -5.5rem;
+    // }
 }
 
 .slider .slick-arrow {
@@ -132,10 +135,10 @@
     font-size: 0;
     border: none;
     color: $gray;
-    top: 4px;
+    top: .4rem;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 10px;
+    padding: 1rem;
 }
 
 
@@ -167,11 +170,7 @@
     }
 
     &__logo-svg {
-        @media (max-width: 1200px) {
-            margin-bottom: 40px;
-        }
-
-        @media (max-width: 1200px) {
+        @media (max-width: 576px) {
             margin-bottom: 20px;
         }
     }
@@ -193,6 +192,7 @@
 
         @media (max-width: 576px) {
             margin-bottom: 20px;
+            gap: 10px;
         }
     }
 

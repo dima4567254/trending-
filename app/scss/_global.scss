@@ -12,7 +12,7 @@ body {
     // letter-spacing: 0.6px;
     display: flex;
     flex-direction: column;
-    color: #ffffff;
+    color: $white;
     font-weight: 400;
 }
 
@@ -79,20 +79,20 @@ body {
         border-radius: 6px;
 
         &--facebook {
-            background-color: #5677b9;
+            background-color: $blue1;
         }
 
         &--twitter {
-            background-color: #39a6d4;
+            background-color: $blue2;
         }
 
         &--youtube {
-            background-color: #cd312a;
+            background-color: $red2;
 
         }
 
         &--phone {
-            background-color: #235f85;
+            background-color: $blue3;
         }
     }
 }
@@ -103,21 +103,10 @@ body {
         width: 88px;
         object-fit: cover;
         margin-right: 20px;
-
-        @media (max-width: 992px) {
-            margin: 0px 0px 40px 0px;
-        }
-        @media (max-width: 576px) {
-            margin: 0px 0px 20px 0px;
-         }
     }
 }
 
 .box {
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: flex-start;
-
     &__currency {
         background-color: $orange;
         border-radius: 4px;
@@ -168,7 +157,7 @@ body {
         }
 
         &:hover {
-            background-color: #ffffff;
+            background-color: $white;
 
             .box__svg use {
                 fill: $black;
@@ -188,6 +177,9 @@ body {
 }
 
 .info {
+    // overflow: scroll;
+
+
 
     &__avtar {
         transition: color 0.5s;
@@ -205,7 +197,7 @@ body {
         }
 
         &:hover {
-            color: $red;
+            color: $ac;
         }
 
         &:active {
@@ -223,6 +215,11 @@ body {
 
     &__calendar {
         font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100px;
+        // min-width: 90px;
     }
 
     &__time {
@@ -235,6 +232,12 @@ body {
 
     &__message {
         font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 40px;
+
 
 
         transition: color 0.5s;
@@ -244,7 +247,7 @@ body {
         }
 
         &:hover {
-            color: $red;
+            color: $ac;
         }
 
         &:active {
@@ -302,7 +305,7 @@ body {
 }
 
 .box__icon:hover .box__svg use {
-    fill: black;
+    fill: $black;
 }
 
 
@@ -374,7 +377,7 @@ body {
 
         &:hover {
             background-color: $red;
-            color: #ffffff;
+            color: $white;
         }
 
         &:active {
